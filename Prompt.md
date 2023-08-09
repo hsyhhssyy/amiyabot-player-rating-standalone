@@ -1,36 +1,17 @@
-def upload_data(data_dict,user_id):
-    try:
-        # 阿里云oss只写权限账户
-        OSS_ACCESS_ID = 'LTAI5tFf4i8dvmmtLJXqA48X'
-        OSS_ACCESS_KEY = 'u6yqUCZXtXTliRpf5fdhtCRFb8P3WD'
-        OSS_ENDPOINT = 'oss-cn-beijing.aliyuncs.com'
-        OSS_BUCKET = 'amiyabot-playerbox-collector'
-        OBJECT_DIRECTORY = 'collected_data_v1'
+## 计分规则    
+初版因为没有收集到足够的玩家练度数据，因此打分规则暂时固定如下：
 
-        current_time = datetime.datetime.now().strftime('%Y%m%d.%H%M%S')
+1. 只有精二的干员才算分
+2. 算分规则为 干员基础分（Box深度分）+干员等级分+干员专精分+干员模组分
+3. 干员基础分：4星40分，5星70分，6星100分
+4. 干员等级分：每1级1分
+5. 干员专精分：每个技能 专1：20分 专2：60分，专3:100分
+6. 干员模组分：每个模组 1级：0分 2级：30分，3级：50分
 
-        hashed_uid = hash_uid(user_id)
+其中1模0分的原因是鹰角目前森空岛的接口有Bug，没开的模组也会显示1级，所以插件没办法知道你开没开1级模组，总不能每个有模组的人都有分吧，因此1模改为0分
 
-        FILE_NAME = f"chars.{hashed_uid}.{current_time}.json"
+目前的打分规则代表了养成投入的资源，未来会根据干员持有率来统计强度（大家都练的干员更强，大家都专的技能更强）然后根据强度加权计算平均强度分。
 
-        json_data = json.dumps(data_dict).encode('utf-8')
+请为下面这段Markdown文本生成一个Vue页面,单文件,TypeScript,组合式Api风格
 
-        date = datetime.datetime.utcnow().strftime('%a, %d %b %Y %H:%M:%S GMT')
-        string_to_sign = f'PUT\n\napplication/json\n{date}\n/{OSS_BUCKET}/{OBJECT_DIRECTORY}/{FILE_NAME}'
-        h = hmac.new(OSS_ACCESS_KEY.encode('utf-8'), string_to_sign.encode('utf-8'), digestmod=hashlib.sha1)
-        signature = base64.encodebytes(h.digest()).strip()
-
-        headers = {
-            'Date': date,
-            'Authorization': f'OSS {OSS_ACCESS_ID}:{signature.decode("utf-8")}',
-            'Content-Type': 'application/json'
-        }
-
-        # 发送请求
-        response = requests.put(f'http://{OSS_BUCKET}.{OSS_ENDPOINT}/{OBJECT_DIRECTORY}/{FILE_NAME}', data=json_data, headers=headers)
-
-        log.info(f'发送用户box返回信息:{response.content}')
-    except Exception as e:
-        log.info(f"发送用户box时出错:{str(e)}")
-
-能否用axios改写这个python函数的js版
+我能否在页面添加一个引导到项目Github的可点击链接,最好美化一点,有图片啥的就更好了

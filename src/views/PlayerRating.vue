@@ -26,7 +26,7 @@
         </tr>
       </table>
       <p class="total-score">总分为：<strong>{{ doctorScore.scoreTotal }}</strong></p>
-      <p class="note">计分规则更新于2023-08-07，<a href="/ratingRule" target="_blank">查看规则详情</a>。</p>
+      <p class="note">计分规则更新于2023-08-07，<a href="/ratingRule">查看规则详情</a>。</p>
       <p class="warning">该分数仅供娱乐，请不要用这个分数来评判博士呦~~</p>
     </div>
 
@@ -286,6 +286,7 @@ export default {
 
         return true
       } catch (error) {
+        alert("凭据失效或错误，请重新输入凭据。")
         console.error("Error getting code:", error);
         return false
       }
