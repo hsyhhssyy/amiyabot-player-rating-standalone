@@ -5,7 +5,7 @@
         <img :src="card.image" :alt="card.imageAlt" class="card-image"/>
         <div class="card-text">
           <p class="line" style="font-size: 16px;">
-            平均等级：精<span class="highlight">{{ card.avgEliteLevel }}&nbsp;-&nbsp;{{ card.avgLevel }}</span>级。&nbsp;平均 <span class="highlight"> {{ card.avgSkillLevel }}</span> 级技能 
+            平均等级：&nbsp;精<span class="highlight">{{ card.avgEliteLevel }}&nbsp;-&nbsp;{{ card.avgLevel }}</span>级。平均 <span class="highlight"> {{ card.avgSkillLevel }}</span> 级技能 
           </p>
           <p class="line" style="font-size: 16px;" v-if="card.avgSkill1 !== undefined ">  
             平均专精：
