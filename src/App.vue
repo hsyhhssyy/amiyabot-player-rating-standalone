@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app-view">
     <router-view/>
   </div>
 </template>
@@ -20,10 +20,11 @@ html, body {
   flex-direction: column;
 }
 
-#app {
+#app-view {
   flex: 1;
   display: flex;
   padding: 5px;
+  width: 100%;
   flex-direction: column;
 }
 </style>

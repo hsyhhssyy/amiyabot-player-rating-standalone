@@ -32,51 +32,51 @@
         <button @click="handleButtonClick">开始打分</button>
       </div>
     </div>
+    <div class="character-static">
+      <CharacterStatic />
+    </div>
   </div>
 </template>
   
 <script lang="ts">
 import { ref, onMounted  } from 'vue';
 import { useRouter } from 'vue-router';
+import CharacterStatic from '../views/CharacterStatic.vue'
 
 export default {
-  name: 'AquireToken',
-  setup() {
-    const command1 = ref('localStorage.getItem("SK_OAUTH_CRED_KEY");');
-    const command2 = ref('javascript:prompt(undefined, localStorage.getItem("SK_OAUTH_CRED_KEY"))');
-
-    const openLink = (url: string) => {
-      window.open(url, '_blank');
-    };
-    
-    const jsonInput = ref('');
-
-    const router = useRouter();
-
-    onMounted(() => {
-      const tokenFromSession = sessionStorage.getItem('tokenValue');
-      if (tokenFromSession) {
-        router.push({ name: 'PlayerRating' }); 
-      }
-    });
-
-    const handleButtonClick = () => {
-      try {
-        const tokenValue = jsonInput.value;
-        sessionStorage.setItem('tokenValue', tokenValue);
-        router.push({ name: 'PlayerRating' });
-      } catch (error) {
-        alert("请确保您粘贴的是一个有效的凭据内容。");
-      }
-    };
-
-    return {command1,
-      command2,
-      openLink,
-      jsonInput,
-      handleButtonClick
-    };
-  }
+    name: 'AquireToken',
+    setup() {
+        const command1 = ref('localStorage.getItem("SK_OAUTH_CRED_KEY");');
+        const command2 = ref('javascript:prompt(undefined, localStorage.getItem("SK_OAUTH_CRED_KEY"))');
+        const openLink = (url: string) => {
+            window.open(url, '_blank');
+        };
+        const jsonInput = ref('');
+        const router = useRouter();
+        onMounted(() => {
+            const tokenFromSession = sessionStorage.getItem('tokenValue');
+            if (tokenFromSession) {
+                router.push({ name: 'PlayerRating' });
+            }
+        });
+        const handleButtonClick = () => {
+            try {
+                const tokenValue = jsonInput.value;
+                sessionStorage.setItem('tokenValue', tokenValue);
+                router.push({ name: 'PlayerRating' });
+            }
+            catch (error) {
+                alert("请确保您粘贴的是一个有效的凭据内容。");
+            }
+        };
+        return { command1,
+            command2,
+            openLink,
+            jsonInput,
+            handleButtonClick
+        };
+    },
+    components: { CharacterStatic }
 }
 </script>
   
@@ -93,8 +93,12 @@ export default {
 
 .tutorial-container {
   display: flex;
+  width: 500px;
   flex-direction: column;
   gap: 16px;
+}
+.character-static {
+  flex-grow: 1;
 }
 
 .title {
@@ -172,6 +176,8 @@ button {
 button:hover {
   background-color: #2980b9;
 }
+
+
 
 </style>
   
