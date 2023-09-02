@@ -90,7 +90,7 @@
 
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://amiya-bot-service.hsyhhssyy.net/characterStatistics");
+        const response = await axios.get("https://raw.githubusercontent.com/hsyhhssyy/amiyabot-player-rating-standalone/master/latest_character_statistic.json");
         const data = response.data.data; // 根据你的数据结构进行调整
         updateTime.value = response.data.versionEnd
         batchCount.value = response.data.batchCount
