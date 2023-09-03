@@ -1,73 +1,80 @@
 一个Vue组件,单文件,TypeScript,组合式Api风格
 
 
-const cards = ref([
-        {
-          id: 1,
-          image: 'https://web.hycdn.cn/arknights/game/assets/char_skin/avatar/char_2015_dusk%232.png',
-          avgEliteLevel: 2.01,
-          avgLevel: 50.01,
-          avgSkillLevel: 5.01,
-          avgSkill1: 2.01,
-          avgSkill2: 3.01,
-          avgSkill3: 2.01,
-          avgModule1: 1.01,
-          avgModule2: 2.01
-        },
-        {
-          id: 1,
-          image: 'https://web.hycdn.cn/arknights/game/assets/char_skin/avatar/char_2015_dusk%232.png',
-          avgEliteLevel: 2,
-          avgLevel: 50,
-          avgSkillLevel: 5,
-          avgSkill1: 2,
-          avgSkill2: 3,
-          avgSkill3: 2,
-          avgModule1: 1,
-          avgModule2: 2
-        },
-        {
-          id: 1,
-          image: 'https://web.hycdn.cn/arknights/game/assets/char_skin/avatar/char_2015_dusk%232.png',
-          avgEliteLevel: 2,
-          avgLevel: 50,
-          avgSkillLevel: 5,
-          avgSkill1: 2,
-          avgSkill2: 3,
-          avgSkill3: 2,
-          avgModule1: 1,
-          avgModule2: 2
-        },
-        // ... more cards
-      ]);
-  
-      return { cards };
+const calcuate_single_char = (character: any, charMapData: any,averageData :any) => {
+      let scoreDict = {
+        total: 0,
+        totalAveraged:0,
+        level: 0,
+        levelAveraged:0,
+        specialize: 0,
+        specializeAveraged:0,
+        equip: 0,
+        equipAveraged:0
+      };
 
-现在我希望这个cards的数据来自于url https://amiya-bot-service.hsyhhssyy.net/characterStatistics
-这个url的内容是一个json
-例子如下:
-{
-    "versionStart": "2023-07-04T12:44:26.0000000+08:00",
-    "versionEnd": "2023-09-02T12:44:26.0000000+08:00",
-    "batchCount": 512,
-    "data": [
-        {
-            "sampleCount": 484,
-            "characterId": "char_4043_erato",
-            "averageEvolvePhase": 0.72,
-            "averageLevel": 20.89,
-            "averageSkillLevel": 3.65,
-            "averageSpecializeLevel": [
-                0.13,
-                0.06
-            ],
-            "averageEquipLevel": {
-                "0": 1,
-                "1": 1.01
-            }
-        },
-        ....一些数据
-        ]
-}
+      let baseIncrease = 0;
+      let evolveIncrease = 0;
 
-image的地址为 https://web.hycdn.cn/arknights/game/assets/char_skin/avatar/{characterId}#1.png
+        switch (charMapData.rarity) {
+          case 5:
+              baseIncrease = 50;
+              evolveIncrease = 80;
+              break;
+          case 4:
+              baseIncrease = 50;
+              evolveIncrease = 70;
+              break;
+          case 3:
+              baseIncrease = 45;
+              evolveIncrease = 60;
+              break;
+          case 2:
+              baseIncrease = 40;
+              break;
+        }
+
+        if (character.evolvePhase == 0) scoreDict.level = character.level;
+    if (character.evolvePhase == 1) scoreDict.level = character.level + baseIncrease;
+    if (character.evolvePhase == 2) scoreDict.level = character.level + baseIncrease + evolveIncrease;
+
+            const averageCalculatedLevel = averageData.averageCalculatedLevel;
+            const levelScore = 2 * scoreDict.level - averageCalculatedLevel;
+
+            scoreDict.levelAveraged = levelScore;
+
+            character.skills.forEach((skill: { specializeLevel: any; }, index: number) => {
+              const averageSpecializeLevel = averageData.averageSpecializeLevel[index];
+              const specializeScore = ( 2 * skill.specializeLevel - averageSpecializeLevel ) * 30;
+              scoreDict.specialize += skill.specializeLevel * 30;
+              scoreDict.specializeAveraged += specializeScore;
+            });
+
+            character.equip.forEach((equipment: { level: any; }, index: number) => {
+              if(index==0){
+                return
+              }
+
+              const averageEquipLevel = averageData.averageEquipLevel[index.toString()];
+              const equipScore = ( 2 * equipment.level - averageEquipLevel ) * 20;
+              scoreDict.equip += equipment.level *  20;
+              scoreDict.equipAveraged += equipScore;
+
+              if(isNaN(scoreDict.equipAveraged)){
+                debugger
+              }
+
+            });
+
+            scoreDict.total = scoreDict.level + scoreDict.specialize + scoreDict.equip;
+        scoreDict.totalAveraged = scoreDict.levelAveraged + scoreDict.specializeAveraged + scoreDict.equipAveraged;
+      
+
+      return scoreDict;
+    }
+
+    请修改这个函数
+计算得分时，还会同时计算提升潜力
+如果你的某个干员的精英化等级落后于平均精英化等级，提升潜力=与平均等级分的差距*2 。这项的目的是首先推荐精英化等级落后的干员。
+如果你的干员的精英化等级高于平均精英化等级，则提升潜力=与平均等级分的差距+技能专精分差距最大的那个技能的技能专精分+模组分差距最大的那个模组的模组分。
+

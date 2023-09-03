@@ -6,7 +6,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_212_ansel",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 44,
             "averageCalculatedLevel": 84.21052631578948,
             "averageSkillLevel": 5.98,
@@ -161,7 +161,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_282_catap",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 15,
             "averageCalculatedLevel": 55.28654970760234,
             "averageSkillLevel": 3.65,
@@ -186,7 +186,7 @@
         {
             "sampleCount": 491,
             "characterId": "char_286_cast3",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 0,
             "averageLevel": 28,
             "averageCalculatedLevel": 28.338085539714868,
             "averageSkillLevel": 1,
@@ -214,7 +214,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_208_melan",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 51,
             "averageCalculatedLevel": 91.04288499025341,
             "averageSkillLevel": 6.26,
@@ -226,7 +226,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_500_noirc",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 0,
             "averageLevel": 29,
             "averageCalculatedLevel": 29.49122807017544,
             "averageSkillLevel": 1,
@@ -287,7 +287,7 @@
         {
             "sampleCount": 502,
             "characterId": "char_4091_ulika",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 0,
             "averageLevel": 26,
             "averageCalculatedLevel": 26.826693227091635,
             "averageSkillLevel": 1,
@@ -375,7 +375,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_124_kroos",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 53,
             "averageCalculatedLevel": 93.66471734892788,
             "averageSkillLevel": 6.89,
@@ -432,7 +432,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_122_beagle",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 20,
             "averageCalculatedLevel": 60.92397660818713,
             "averageSkillLevel": 4.01,
@@ -609,7 +609,7 @@
         {
             "sampleCount": 499,
             "characterId": "char_4000_jnight",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 0,
             "averageLevel": 26,
             "averageCalculatedLevel": 26.16432865731463,
             "averageSkillLevel": 1,
@@ -635,7 +635,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_211_adnach",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 9,
             "averageCalculatedLevel": 49.94541910331384,
             "averageSkillLevel": 3.32,
@@ -880,7 +880,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_121_lava",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 42,
             "averageCalculatedLevel": 82.11111111111111,
             "averageSkillLevel": 5.18,
@@ -1287,7 +1287,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_503_rang",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 0,
             "averageLevel": 25,
             "averageCalculatedLevel": 25.705653021442494,
             "averageSkillLevel": 1,
@@ -1431,7 +1431,7 @@
         {
             "sampleCount": 510,
             "characterId": "char_376_therex",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 0,
             "averageLevel": 28,
             "averageCalculatedLevel": 28.474509803921567,
             "averageSkillLevel": 1,
@@ -1667,7 +1667,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_285_medic2",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 0,
             "averageLevel": 29,
             "averageCalculatedLevel": 29.044834307992204,
             "averageSkillLevel": 1,
@@ -1960,7 +1960,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_209_ardign",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 34,
             "averageCalculatedLevel": 74.35477582846003,
             "averageSkillLevel": 5.15,
@@ -2023,7 +2023,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_240_wyvern",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 20,
             "averageCalculatedLevel": 60.44444444444444,
             "averageSkillLevel": 4.44,
@@ -2223,7 +2223,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_284_spot",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 51,
             "averageCalculatedLevel": 91.18518518518519,
             "averageSkillLevel": 6.51,
@@ -2380,7 +2380,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_502_nblade",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 0,
             "averageLevel": 29,
             "averageCalculatedLevel": 29.460038986354775,
             "averageSkillLevel": 1,
@@ -2434,7 +2434,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_501_durin",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 0,
             "averageLevel": 27,
             "averageCalculatedLevel": 27.53216374269006,
             "averageSkillLevel": 1,
@@ -2747,7 +2747,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_192_falco",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 22,
             "averageCalculatedLevel": 62.333333333333336,
             "averageSkillLevel": 3.99,
@@ -2844,7 +2844,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_210_stward",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 45,
             "averageCalculatedLevel": 85.57894736842105,
             "averageSkillLevel": 6.17,
@@ -2974,7 +2974,7 @@
         {
             "sampleCount": 505,
             "characterId": "char_4077_palico",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 0,
             "averageLevel": 26,
             "averageCalculatedLevel": 26.20990099009901,
             "averageSkillLevel": 1,
@@ -3074,7 +3074,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_278_orchid",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 48,
             "averageCalculatedLevel": 88.30799220272904,
             "averageSkillLevel": 6.19,
@@ -3181,7 +3181,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_281_popka",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 38,
             "averageCalculatedLevel": 78.05847953216374,
             "averageSkillLevel": 5.2,
@@ -3210,7 +3210,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_009_12fce",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 0,
             "averageLevel": 28,
             "averageCalculatedLevel": 28.21832358674464,
             "averageSkillLevel": 1,
@@ -3395,7 +3395,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_123_fang",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 50,
             "averageCalculatedLevel": 90.29629629629629,
             "averageSkillLevel": 6.36,
@@ -3468,7 +3468,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_120_hibisc",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 32,
             "averageCalculatedLevel": 72.0916179337232,
             "averageSkillLevel": 4.85,
@@ -3952,7 +3952,7 @@
         {
             "sampleCount": 492,
             "characterId": "char_4093_frston",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 0,
             "averageLevel": 26,
             "averageCalculatedLevel": 26.227642276422763,
             "averageSkillLevel": 1,
@@ -4074,7 +4074,7 @@
         {
             "sampleCount": 513,
             "characterId": "char_283_midn",
-            "averageEvolvePhase": 2,
+            "averageEvolvePhase": 1,
             "averageLevel": 36,
             "averageCalculatedLevel": 76.47953216374269,
             "averageSkillLevel": 5.54,

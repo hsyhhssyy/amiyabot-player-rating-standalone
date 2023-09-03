@@ -9,26 +9,29 @@
           <td>{{ doctorScore.charsTotal }}</td>
         </tr>
         <tr>
-          <td>干员深度分</td>
-          <td>{{ doctorScore.scoreBaseTotal }}</td>
-        </tr>
-        <tr>
           <td>干员等级分</td>
-          <td>{{ doctorScore.scoreLevelTotal }}</td>
+          <td>{{ Math.round(doctorScore.scoreLevelTotal) }}</td>
         </tr>
         <tr>
           <td>干员专精分</td>
-          <td>{{ doctorScore.scoreSpecializeTotal }}</td>
+          <td>{{ Math.round(doctorScore.scoreSpecializeTotal) }}</td>
         </tr>
         <tr>
           <td>干员模组分</td>
-          <td>{{ doctorScore.scoreEquipTotal }}</td>
+          <td>{{ Math.round(doctorScore.scoreEquipTotal) }}</td>
         </tr>
       </table>
-      <p class="total-score">总分为：<strong>{{ doctorScore.scoreTotal }}</strong></p>
-      <p class="note">计分规则更新于2023-08-07，<a href="/ratingRule">查看规则详情</a>。</p>
+      <p class="total-score">总分为：<strong>{{ Math.round(doctorScore.scoreTotal) }}</strong></p>
       <p class="warning">该分数仅供娱乐，请不要用这个分数来评判博士呦~~</p>
     </div>
+
+    <div class="info-card">
+      下一步干员养成建议<span class="note">（如果你觉得这里面的养成建议没啥用，那大概是你的练度已经很高了。）</span>
+      <ul>
+        <li v-for="suggestion in suggestions">{{ suggestion }}</li>
+      </ul>
+    </div>
+
 
     <div class="text-section">
       <div @click="toggleText" class="title">
@@ -46,21 +49,84 @@
             <tr>
               <th>干员名称</th>
               <th>总分</th>
+              <th>补正后</th>
               <th>等级分</th>
+              <th>补正后</th>
               <th>专精分</th>
+              <th>补正后</th>
               <th>模组分</th>
+              <th>补正后</th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="detail in scoreDetails" :key="detail.name">
               <td>{{ detail.name }}</td>
-              <td>{{ detail.total }}</td>
-              <td>{{ detail.level }}</td>
-              <td>{{ detail.specialize }}</td>
-              <td>{{ detail.equip }}</td>
+              <td>{{ Math.round(detail.total) }}</td>
+              <td>{{ Math.round(detail.totalAveraged) }}</td>
+              <td>{{ Math.round(detail.level) }}</td>
+              <td>{{ Math.round(detail.levelAveraged) }}</td>
+              <td>{{ Math.round(detail.specialize) }}</td>
+              <td>{{ Math.round(detail.specializeAveraged) }}</td>
+              <td>{{ Math.round(detail.equip) }}</td>
+              <td>{{ Math.round(detail.equipAveraged) }}</td>
             </tr>
           </tbody>
         </table>
+      </div>
+    </div>
+
+    <div class="text-section">
+      <div @click="toggleRule" class="title">
+        评分规则
+        <span v-if="!ruleExpanded">
+          <i class="fas fa-chevron-down"></i>
+        </span>
+        <span v-else>
+          <i class="fas fa-chevron-up"></i>
+        </span>
+      </div>
+      <div v-if="ruleExpanded" class="details-table">
+        <div class="scoring-rules">
+    <h2>计分规则</h2>
+    <p>打分规则如下：</p>
+    <p>首先计算玩家的各项分数</p>
+    <ol>
+      <li>干员等级分：每1级1分（将精英化也考虑进去，比如精二10级的玛恩纳，是50+80+10=140分）</li>
+      <li>干员专精分：每个专精等级30分</li>
+      <li>干员模组分：每个模组等级20分</li>
+    </ol>
+    <p>
+      然后，根据最新统计的玩家练度数据（首页有展示），计算每项分数的补正如下：
+    </p>
+    <ol>
+      <li>如果该项目的平均得分为X，而你的得分为Y，则补正为：2*Y-X</li>
+      <li>比如玛恩纳的平均等级分为220分（平均精二满级），而你的练度为190分（精二60级）</li>
+      <li>则你的分数为 2 * 190 - 220 = 160</li>
+    </ol>
+    <p>
+      基础得分代表了养成投入的资源。
+    </p>
+    <p>
+      而补正得分则是对你的惩罚和奖励。
+    </p>
+    <p>
+      如果大家都练你不练，则你的分数会低于练度应得的基础分，如果差太多甚至会扣分。反之，如果大家都不练但是你练了，那么会加奖励分，差距越大，加的越多。
+    </p>
+    <h2>关于练度推荐</h2>    
+    <p>
+      计算得分时，还会同时计算提升潜力，然后按顺序展示提升潜力最大的前十位（注意，提升潜力和分数差距并不完全相关）。
+    </p>
+    <ol>
+      <li>如果你的某个干员的精英化等级落后于平均精英化等级，提升潜力=与平均等级分的差距*2 。这项的目的是首先推荐精英化等级落后的干员。</li>
+      <li>如果你的干员的精英化等级高于平均精英化等级，则提升潜力=与平均等级分的差距+技能专精分差距最大的那个技能的技能专精分+模组分差距最大的那个模组的模组分。</li>
+    </ol>
+    <div class="github-link-container">
+      <a href="https://github.com/hsyhhssyy/amiyabot-player-rating-standalone" target="_blank" rel="noopener noreferrer">
+        <img src="@/assets/github-octocat.png" alt="查看GitHub项目" class="github-icon" />
+        <span>查看GitHub项目</span>
+      </a>
+    </div>
+  </div>
       </div>
     </div>
 
@@ -68,7 +134,7 @@
 </template>
   
 <script lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import { useRouter } from 'vue-router'; // 导入 vue-router 的 useRouter 钩子
 import axios from 'axios';
 import { HmacSHA1, enc } from 'crypto-js';
@@ -83,6 +149,8 @@ interface ScoreDetail {
   equip: number;
   equipAveraged: number;
   name: string;
+  potential: number;
+  potentialSuggestion: string;
 }
 
 export default {
@@ -91,18 +159,20 @@ export default {
     const router = useRouter(); // 初始化 router 对象
 
     const expanded = ref(false);
+    const ruleExpanded = ref(false);
     const loading = ref(true);
     const tokenValue = ref("");
     const scoreDetails = ref<ScoreDetail[]>([]);
+    const suggestions = ref<String[]>([]);
 
     const doctorScore = ref({
       name: "",
-      charsTotal: "0",
-      scoreTotal: "0",
-      scoreBaseTotal: "0",
-      scoreLevelTotal: "0",
-      scoreSpecializeTotal: "0",
-      scoreEquipTotal: "0"
+      charsTotal: 0,
+      scoreTotal: 0,
+      scoreBaseTotal: 0,
+      scoreLevelTotal: 0,
+      scoreSpecializeTotal: 0,
+      scoreEquipTotal: 0
     })
 
 
@@ -124,7 +194,7 @@ export default {
 
       const date = new Date().toUTCString();
       const string_to_sign = `PUT\n\napplication/json\n${date}\nx-oss-date:${date}\n/${OSS_BUCKET}/${OBJECT_DIRECTORY}/${FILE_NAME}`;
-      console.log(string_to_sign)      
+      console.log(string_to_sign)
       const hash = HmacSHA1(string_to_sign, OSS_ACCESS_KEY);
       const signature = enc.Base64.stringify(hash);
 
@@ -152,84 +222,118 @@ export default {
       return hashHex;
     };
 
-    const calcuate_single_char = (character: any, charMapData: any,averageData :any) => {
+    const calcuate_single_char = (character: any, charMapData: any, averageData: any) => {
       let scoreDict = {
         total: 0,
-        totalAveraged:0,
+        totalAveraged: 0,
         level: 0,
-        levelAveraged:0,
+        levelAveraged: 0,
         specialize: 0,
-        specializeAveraged:0,
+        specializeAveraged: 0,
         equip: 0,
-        equipAveraged:0
+        equipAveraged: 0,
+        potential: 0,
+        potentialSuggestion: ""
       };
-
       let baseIncrease = 0;
       let evolveIncrease = 0;
 
-        switch (charMapData.rarity) {
-          case 5:
-              baseIncrease = 50;
-              evolveIncrease = 80;
-              break;
-          case 4:
-              baseIncrease = 50;
-              evolveIncrease = 70;
-              break;
-          case 3:
-              baseIncrease = 45;
-              evolveIncrease = 60;
-              break;
-          case 2:
-              baseIncrease = 40;
-              break;
+      switch (charMapData.rarity) {
+        case 5:
+          baseIncrease = 50;
+          evolveIncrease = 80;
+          break;
+        case 4:
+          baseIncrease = 50;
+          evolveIncrease = 70;
+          break;
+        case 3:
+          baseIncrease = 45;
+          evolveIncrease = 60;
+          break;
+        case 2:
+          baseIncrease = 40;
+          break;
+      }
+
+      if (character.evolvePhase === 0) scoreDict.level = character.level;
+      if (character.evolvePhase === 1) scoreDict.level = character.level + baseIncrease;
+      if (character.evolvePhase === 2) scoreDict.level = character.level + baseIncrease + evolveIncrease;
+
+      const averageCalculatedLevel = averageData.averageCalculatedLevel;
+      const levelScore = 2 * scoreDict.level - averageCalculatedLevel;
+
+      scoreDict.levelAveraged = levelScore;
+
+      // 计算提升潜力
+      let maxSpecializeSkillIndex = 0;
+      let maxSpecializeDifference = 0;
+      character.skills.forEach((skill: any, index: number) => {
+        const averageSpecializeLevel = averageData.averageSpecializeLevel[index];
+        const specializeScore = (2 * skill.specializeLevel - averageSpecializeLevel) * 30;
+        scoreDict.specialize += skill.specializeLevel * 30;
+        scoreDict.specializeAveraged += specializeScore;
+
+        // 计算技能专精分差距最大值
+        const specializeDifference = (averageSpecializeLevel - skill.specializeLevel) * 30;
+        if (specializeDifference > maxSpecializeDifference) {
+          maxSpecializeSkillIndex = index
+          maxSpecializeDifference = specializeDifference
         }
+      });
 
-        if (character.evolvePhase == 0) scoreDict.level = character.level;
-    if (character.evolvePhase == 1) scoreDict.level = character.level + baseIncrease;
-    if (character.evolvePhase == 2) scoreDict.level = character.level + baseIncrease + evolveIncrease;
+      let maxEquipDifference = 0;
+      let maxEquipIndex = 0;
+      character.equip.forEach((equipment: any, index: number) => {
+        if (index === 0) return;
 
-    if (averageData) {
-            const averageCalculatedLevel = averageData.averageCalculatedLevel;
-            const playerLevel = scoreDict.level;
-            const levelScore = 2 * playerLevel - averageCalculatedLevel;
+        const averageEquipLevel = averageData.averageEquipLevel[index.toString()] || 0;
+        const equipScore = (2 * equipment.level - averageEquipLevel) * 20;
+        scoreDict.equip += equipment.level * 20;
+        scoreDict.equipAveraged += equipScore;
 
-            scoreDict.level = levelScore;
-          }
+        // 计算模组分差距最大值
+        const equipDifference = (averageEquipLevel - equipment.level) * 20;
+        if (equipDifference > maxEquipDifference) {
+          maxEquipIndex = index
+          maxEquipDifference = equipDifference
+        }
+      });
 
-        character.skills.forEach((skill: { specializeLevel: any; }) => {
-          switch (skill.specializeLevel) {
-            case 1:
-              scoreDict.specialize += 20;
-              break;
-            case 2:
-              scoreDict.specialize += 60;
-              break;
-            case 3:
-              scoreDict.specialize += 100;
-              break;
-          }
-        });
+      scoreDict.total = scoreDict.level + scoreDict.specialize + scoreDict.equip;
+      scoreDict.totalAveraged = scoreDict.levelAveraged + scoreDict.specializeAveraged + scoreDict.equipAveraged;
 
-        character.equip.forEach((equipment: { level: any; }) => {
-          switch (equipment.level) {
-            case 1:
-              scoreDict.equip += 0;
-              break;
-            case 2:
-              scoreDict.equip += 30;
-              break;
-            case 3:
-              scoreDict.equip += 50;
-              break;
-          }
-        });
+      //let potentialSuggestion = `averageCalculatedLevel=${averageCalculatedLevel} scoreDict.level=${scoreDict.level} character.level=${character.level} averageData.level=${averageData.averageLevel}`
 
-        scoreDict.total = scoreDict.level + scoreDict.specialize + scoreDict.equip;
-      
+      let potentialSuggestion =""
+
+      if (character.evolvePhase < averageData.averageEvolvePhase) {
+        scoreDict.potential = (averageCalculatedLevel - scoreDict.level) * 2;
+
+        potentialSuggestion += `提升${charMapData.name}干员到精英化${averageData.averageEvolvePhase}阶段，并建议升至${Math.ceil(averageData.averageLevel)}级`;
+
+      } else if (character.level < averageData.averageLevel) {
+        scoreDict.potential = averageCalculatedLevel - scoreDict.level + maxSpecializeDifference + maxEquipDifference;
+        potentialSuggestion += `提升${charMapData.name}干员的等级至精英化${character.evolvePhase} ${Math.ceil(averageData.averageLevel)}级`;
+      } else {
+        scoreDict.potential = averageCalculatedLevel - scoreDict.level + maxSpecializeDifference + maxEquipDifference;
+        potentialSuggestion += `提升${charMapData.name}干员`;
+      }
+
+      let hasEquip = character.equip && character.equip.length > 1;
+
+      if (maxSpecializeSkillIndex > 0) {
+        potentialSuggestion += `，专精${maxSpecializeSkillIndex+1}技能至专${Math.ceil(averageData.averageSpecializeLevel[maxSpecializeSkillIndex])}`;
+      }
+
+      if (hasEquip && maxEquipIndex > 0) {
+        potentialSuggestion += `，开启${maxEquipIndex}模组至${Math.ceil(averageData.averageEquipLevel[maxEquipIndex])}级`;
+      }
+
+      scoreDict.potentialSuggestion = potentialSuggestion + `。(+${Math.ceil(scoreDict.potential)})`;
 
       return scoreDict;
-    }
+    };
 
     const calculate_score = async (token: string) => {
 
@@ -262,12 +366,12 @@ export default {
         if (response.status != 200 || response.data.code != 0) {
           return false
         }
-        
+
 
         let infoData = response.data.data
 
-        response = await axios.get("https://raw.githubusercontent.com/hsyhhssyy/amiyabot-player-rating-standalone/master/latest_character_statistic.json");
-        const characterStatisticsData :any  = response.data.data; // 根据你的数据结构进行调整
+        response = await axios.get("/latest_character_statistic.json");
+        const characterStatisticsData: any = response.data.data; // 根据你的数据结构进行调整
 
         let totalScores = 0;
         let totalLevelScores = 0;
@@ -276,15 +380,15 @@ export default {
 
         infoData.chars.forEach((character: { charId: string | number; }) => {
           const charMapData = infoData.charInfoMap[character.charId];
-          
-          const averageData = characterStatisticsData.find((stat: { characterId: string }) => stat.characterId === character.charId);
-          
-          const scoreDict = calcuate_single_char(character, charMapData,averageData);
 
-          totalScores += scoreDict.total;
-          totalLevelScores += scoreDict.level;
-          totalSpecializeScores += scoreDict.specialize;
-          totalEquipScores += scoreDict.equip;
+          const averageData = characterStatisticsData.find((stat: { characterId: string }) => stat.characterId === character.charId);
+
+          const scoreDict = calcuate_single_char(character, charMapData, averageData);
+
+          totalScores += scoreDict.totalAveraged;
+          totalLevelScores += scoreDict.levelAveraged;
+          totalSpecializeScores += scoreDict.specializeAveraged;
+          totalEquipScores += scoreDict.equipAveraged;
 
           if (scoreDict.total !== 0) {
             scoreDetails.value.push({
@@ -295,13 +399,28 @@ export default {
         });
 
         doctorScore.value.charsTotal = infoData.chars.length;
-        doctorScore.value.scoreTotal = totalScores.toString();
-        doctorScore.value.scoreLevelTotal = totalLevelScores.toString();
-        doctorScore.value.scoreSpecializeTotal = totalSpecializeScores.toString();
-        doctorScore.value.scoreEquipTotal = totalEquipScores.toString();
+        doctorScore.value.scoreTotal = totalScores;
+        doctorScore.value.scoreLevelTotal = totalLevelScores;
+        doctorScore.value.scoreSpecializeTotal = totalSpecializeScores;
+        doctorScore.value.scoreEquipTotal = totalEquipScores;
+
+        // 找出total比totalAveraged少的项目
+        const lowerTotalDetails = scoreDetails.value.filter(detail => detail.potential > 50);
+
+        const sortedScoreDicts = lowerTotalDetails.sort((a, b) => b.potential - a.potential);
+
+        // 获取前五个潜力最高的
+        //const topFivePotentials = sortedScoreDicts;
+        const topFivePotentials = sortedScoreDicts.slice(0, 10);
+
+        // 输出建议
+        const topFiveSuggestions = topFivePotentials.map(dict => dict.potentialSuggestion);
+
+        suggestions.value = topFiveSuggestions;
+
 
         loading.value = false
-       
+
         const currentTime = new Date().getTime();
         const lastUploadTime = localStorage.getItem('lastUploadTime-' + meData.gameStatus.uid);
         if (!lastUploadTime || (currentTime - parseInt(lastUploadTime) > 3600000)) {
@@ -339,13 +458,20 @@ export default {
       expanded.value = !expanded.value;
     };
 
+    const toggleRule = () => {
+      ruleExpanded.value = !ruleExpanded.value;
+    };
+
     return {
       loading,
       tokenValue,
       expanded,
+      ruleExpanded,
       doctorScore,
       scoreDetails,
-      toggleText
+      toggleText,
+      toggleRule,
+      suggestions
     };
   }
 }
@@ -436,7 +562,8 @@ export default {
 }
 
 .info-card .total-score {
-  font-size: 24px; /* 或任何你想要的大小 */
+  font-size: 24px;
+  /* 或任何你想要的大小 */
   text-align: center;
   margin-top: 15px;
 }
@@ -445,6 +572,27 @@ export default {
   font-size: 14px;
   color: #e74c3c;
   margin-top: 10px;
+}
+
+
+.scoring-rules {
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+p, li {
+  color: #555;
+  font-size: 16px;
+}
+
+.github-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
 </style>
   

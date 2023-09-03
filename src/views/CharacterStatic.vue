@@ -7,7 +7,7 @@
           <p class="line" style="font-size: 16px;">
             平均等级：&nbsp;精<span class="highlight">{{ card.avgEliteLevel }}&nbsp;-&nbsp;{{ card.avgLevel }}</span>级。平均 <span class="highlight"> {{ card.avgSkillLevel }}</span> 级技能 
           </p>
-          <p class="line" style="font-size: 16px;" v-if="card.avgSkill1 !== undefined ">  
+          <p class="line" style="font-size: 16px;" v-if="card.avgSkill1 !== undefined && card.avgSkill1>0">  
             平均专精：
             <span v-if="card.avgSkill1 !== undefined">1技能 <span class="highlight"> {{ card.avgSkill1 }}</span></span>
             &nbsp;
@@ -90,7 +90,7 @@
 
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://raw.githubusercontent.com/hsyhhssyy/amiyabot-player-rating-standalone/master/latest_character_statistic.json");
+        const response = await axios.get("/latest_character_statistic.json");
         const data = response.data.data; // 根据你的数据结构进行调整
         updateTime.value = response.data.versionEnd
         batchCount.value = response.data.batchCount
