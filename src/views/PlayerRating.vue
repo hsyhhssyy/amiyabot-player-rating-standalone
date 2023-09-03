@@ -46,7 +46,6 @@
             <tr>
               <th>干员名称</th>
               <th>总分</th>
-              <th>基础分</th>
               <th>等级分</th>
               <th>专精分</th>
               <th>模组分</th>
@@ -56,7 +55,6 @@
             <tr v-for="detail in scoreDetails" :key="detail.name">
               <td>{{ detail.name }}</td>
               <td>{{ detail.total }}</td>
-              <td>{{ detail.base }}</td>
               <td>{{ detail.level }}</td>
               <td>{{ detail.specialize }}</td>
               <td>{{ detail.equip }}</td>
@@ -77,10 +75,13 @@ import { HmacSHA1, enc } from 'crypto-js';
 
 interface ScoreDetail {
   total: number;
-  base: number;
+  totalAveraged: number;
   level: number;
+  levelAveraged: number;
   specialize: number;
+  specializeAveraged: number;
   equip: number;
+  equipAveraged: number;
   name: string;
 }
 
@@ -151,29 +152,50 @@ export default {
       return hashHex;
     };
 
-    const calcuate_single_char = (character: any, charMapData: any) => {
+    const calcuate_single_char = (character: any, charMapData: any,averageData :any) => {
       let scoreDict = {
         total: 0,
-        base: 0,
+        totalAveraged:0,
         level: 0,
+        levelAveraged:0,
         specialize: 0,
-        equip: 0
+        specializeAveraged:0,
+        equip: 0,
+        equipAveraged:0
       };
 
-      if (character.evolvePhase >= 2) {
+      let baseIncrease = 0;
+      let evolveIncrease = 0;
+
         switch (charMapData.rarity) {
-          case 3:
-            scoreDict.base += 40;
-            break;
-          case 4:
-            scoreDict.base += 70;
-            break;
           case 5:
-            scoreDict.base += 100;
-            break;
+              baseIncrease = 50;
+              evolveIncrease = 80;
+              break;
+          case 4:
+              baseIncrease = 50;
+              evolveIncrease = 70;
+              break;
+          case 3:
+              baseIncrease = 45;
+              evolveIncrease = 60;
+              break;
+          case 2:
+              baseIncrease = 40;
+              break;
         }
 
-        scoreDict.level = character.level;
+        if (character.evolvePhase == 0) scoreDict.level = character.level;
+    if (character.evolvePhase == 1) scoreDict.level = character.level + baseIncrease;
+    if (character.evolvePhase == 2) scoreDict.level = character.level + baseIncrease + evolveIncrease;
+
+    if (averageData) {
+            const averageCalculatedLevel = averageData.averageCalculatedLevel;
+            const playerLevel = scoreDict.level;
+            const levelScore = 2 * playerLevel - averageCalculatedLevel;
+
+            scoreDict.level = levelScore;
+          }
 
         character.skills.forEach((skill: { specializeLevel: any; }) => {
           switch (skill.specializeLevel) {
@@ -203,8 +225,8 @@ export default {
           }
         });
 
-        scoreDict.total = scoreDict.base + scoreDict.level + scoreDict.specialize + scoreDict.equip;
-      }
+        scoreDict.total = scoreDict.level + scoreDict.specialize + scoreDict.equip;
+      
 
       return scoreDict;
     }
@@ -240,21 +262,26 @@ export default {
         if (response.status != 200 || response.data.code != 0) {
           return false
         }
+        
 
         let infoData = response.data.data
 
+        response = await axios.get("https://raw.githubusercontent.com/hsyhhssyy/amiyabot-player-rating-standalone/master/latest_character_statistic.json");
+        const characterStatisticsData :any  = response.data.data; // 根据你的数据结构进行调整
+
         let totalScores = 0;
-        let totalBaseScores = 0;
         let totalLevelScores = 0;
         let totalSpecializeScores = 0;
         let totalEquipScores = 0;
 
         infoData.chars.forEach((character: { charId: string | number; }) => {
           const charMapData = infoData.charInfoMap[character.charId];
-          const scoreDict = calcuate_single_char(character, charMapData);
+          
+          const averageData = characterStatisticsData.find((stat: { characterId: string }) => stat.characterId === character.charId);
+          
+          const scoreDict = calcuate_single_char(character, charMapData,averageData);
 
           totalScores += scoreDict.total;
-          totalBaseScores += scoreDict.base;
           totalLevelScores += scoreDict.level;
           totalSpecializeScores += scoreDict.specialize;
           totalEquipScores += scoreDict.equip;
@@ -269,7 +296,6 @@ export default {
 
         doctorScore.value.charsTotal = infoData.chars.length;
         doctorScore.value.scoreTotal = totalScores.toString();
-        doctorScore.value.scoreBaseTotal = totalBaseScores.toString();
         doctorScore.value.scoreLevelTotal = totalLevelScores.toString();
         doctorScore.value.scoreSpecializeTotal = totalSpecializeScores.toString();
         doctorScore.value.scoreEquipTotal = totalEquipScores.toString();
