@@ -1,0 +1,4461 @@
+{
+    "versionStart": "2023-06-05T06:02:05.0000000+08:00",
+    "versionEnd": "2023-09-03T06:02:05.0000000+08:00",
+    "batchCount": 513,
+    "data": [
+        {
+            "sampleCount": 513,
+            "characterId": "char_212_ansel",
+            "averageEvolvePhase": 2,
+            "averageLevel": 44,
+            "averageCalculatedLevel": 84.21052631578948,
+            "averageSkillLevel": 5.98,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 498,
+            "characterId": "char_1021_kroos2",
+            "averageEvolvePhase": 1,
+            "averageLevel": 56,
+            "averageCalculatedLevel": 106.33734939759036,
+            "averageSkillLevel": 4.74,
+            "averageSpecializeLevel": [
+                0.19,
+                0.79
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.21
+            }
+        },
+        {
+            "sampleCount": 346,
+            "characterId": "char_458_rfrost",
+            "averageEvolvePhase": 0,
+            "averageLevel": 33,
+            "averageCalculatedLevel": 33.884393063583815,
+            "averageSkillLevel": 2.16,
+            "averageSpecializeLevel": [
+                0.11,
+                0.15
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 461,
+            "characterId": "char_492_quercu",
+            "averageEvolvePhase": 0,
+            "averageLevel": 26,
+            "averageCalculatedLevel": 26.453362255965292,
+            "averageSkillLevel": 1.82,
+            "averageSpecializeLevel": [
+                0.07,
+                0.06
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 491,
+            "characterId": "char_243_waaifu",
+            "averageEvolvePhase": 1,
+            "averageLevel": 34,
+            "averageCalculatedLevel": 84.9918533604888,
+            "averageSkillLevel": 4.2,
+            "averageSpecializeLevel": [
+                0.07,
+                0.16
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_117_myrrh",
+            "averageEvolvePhase": 1,
+            "averageLevel": 7,
+            "averageCalculatedLevel": 52.916179337231966,
+            "averageSkillLevel": 3.22,
+            "averageSpecializeLevel": [
+                0.05,
+                0.04
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 508,
+            "characterId": "char_383_snsant",
+            "averageEvolvePhase": 0,
+            "averageLevel": 38,
+            "averageCalculatedLevel": 38.088582677165356,
+            "averageSkillLevel": 2.61,
+            "averageSpecializeLevel": [
+                0.11,
+                0.08
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 481,
+            "characterId": "char_365_aprl",
+            "averageEvolvePhase": 1,
+            "averageLevel": 7,
+            "averageCalculatedLevel": 57.06860706860707,
+            "averageSkillLevel": 3.17,
+            "averageSpecializeLevel": [
+                0.05,
+                0.37
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.11
+            }
+        },
+        {
+            "sampleCount": 473,
+            "characterId": "char_154_morgan",
+            "averageEvolvePhase": 0,
+            "averageLevel": 12,
+            "averageCalculatedLevel": 12.809725158562367,
+            "averageSkillLevel": 1.31,
+            "averageSpecializeLevel": [
+                0.03,
+                0.03
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 455,
+            "characterId": "char_147_shining",
+            "averageEvolvePhase": 2,
+            "averageLevel": 57,
+            "averageCalculatedLevel": 187.83956043956044,
+            "averageSkillLevel": 6.75,
+            "averageSpecializeLevel": [
+                0.08,
+                1,
+                1.45
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.19,
+                "2": 1.09
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_282_catap",
+            "averageEvolvePhase": 2,
+            "averageLevel": 15,
+            "averageCalculatedLevel": 55.28654970760234,
+            "averageSkillLevel": 3.65,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 507,
+            "characterId": "char_333_sidero",
+            "averageEvolvePhase": 0,
+            "averageLevel": 21,
+            "averageCalculatedLevel": 21.859960552268245,
+            "averageSkillLevel": 1.74,
+            "averageSpecializeLevel": [
+                0.02,
+                0.04
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 491,
+            "characterId": "char_286_cast3",
+            "averageEvolvePhase": 2,
+            "averageLevel": 28,
+            "averageCalculatedLevel": 28.338085539714868,
+            "averageSkillLevel": 1,
+            "averageSpecializeLevel": [],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 421,
+            "characterId": "char_291_aglina",
+            "averageEvolvePhase": 2,
+            "averageLevel": 56,
+            "averageCalculatedLevel": 186.3562945368171,
+            "averageSkillLevel": 6.71,
+            "averageSpecializeLevel": [
+                0.13,
+                1.52,
+                2.03
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.08,
+                "2": 1
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_208_melan",
+            "averageEvolvePhase": 2,
+            "averageLevel": 51,
+            "averageCalculatedLevel": 91.04288499025341,
+            "averageSkillLevel": 6.26,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_500_noirc",
+            "averageEvolvePhase": 2,
+            "averageLevel": 29,
+            "averageCalculatedLevel": 29.49122807017544,
+            "averageSkillLevel": 1,
+            "averageSpecializeLevel": [],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 368,
+            "characterId": "char_485_pallas",
+            "averageEvolvePhase": 2,
+            "averageLevel": 20,
+            "averageCalculatedLevel": 150.77445652173913,
+            "averageSkillLevel": 5.72,
+            "averageSpecializeLevel": [
+                1.1,
+                0.15,
+                0.58
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.07,
+                "2": 1.04
+            }
+        },
+        {
+            "sampleCount": 489,
+            "characterId": "char_164_nightm",
+            "averageEvolvePhase": 0,
+            "averageLevel": 33,
+            "averageCalculatedLevel": 33.212678936605315,
+            "averageSkillLevel": 2.23,
+            "averageSpecializeLevel": [
+                0.07,
+                0.07
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 372,
+            "characterId": "char_206_gnosis",
+            "averageEvolvePhase": 2,
+            "averageLevel": 51,
+            "averageCalculatedLevel": 181.69086021505376,
+            "averageSkillLevel": 6.65,
+            "averageSpecializeLevel": [
+                0.38,
+                1.24,
+                2.11
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.2
+            }
+        },
+        {
+            "sampleCount": 502,
+            "characterId": "char_4091_ulika",
+            "averageEvolvePhase": 2,
+            "averageLevel": 26,
+            "averageCalculatedLevel": 26.826693227091635,
+            "averageSkillLevel": 1,
+            "averageSpecializeLevel": [],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 510,
+            "characterId": "char_348_ceylon",
+            "averageEvolvePhase": 0,
+            "averageLevel": 47,
+            "averageCalculatedLevel": 47.3078431372549,
+            "averageSkillLevel": 2.76,
+            "averageSpecializeLevel": [
+                0.03,
+                0.04
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 508,
+            "characterId": "char_4006_melnte",
+            "averageEvolvePhase": 0,
+            "averageLevel": 12,
+            "averageCalculatedLevel": 12.862204724409448,
+            "averageSkillLevel": 1.35,
+            "averageSpecializeLevel": [
+                0.02,
+                0.04
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 503,
+            "characterId": "char_4036_forcer",
+            "averageEvolvePhase": 0,
+            "averageLevel": 30,
+            "averageCalculatedLevel": 30.095427435387673,
+            "averageSkillLevel": 2.33,
+            "averageSpecializeLevel": [
+                0.1,
+                0.11
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 381,
+            "characterId": "char_464_cement",
+            "averageEvolvePhase": 0,
+            "averageLevel": 22,
+            "averageCalculatedLevel": 22.47244094488189,
+            "averageSkillLevel": 1.72,
+            "averageSpecializeLevel": [
+                0.03,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 509,
+            "characterId": "char_1031_slent2",
+            "averageEvolvePhase": 1,
+            "averageLevel": 55,
+            "averageCalculatedLevel": 105.39882121807466,
+            "averageSkillLevel": 4.27,
+            "averageSpecializeLevel": [
+                0.05,
+                0.15,
+                0.54
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_124_kroos",
+            "averageEvolvePhase": 2,
+            "averageLevel": 53,
+            "averageCalculatedLevel": 93.66471734892788,
+            "averageSkillLevel": 6.89,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_271_spikes",
+            "averageEvolvePhase": 0,
+            "averageLevel": 27,
+            "averageCalculatedLevel": 27.40740740740741,
+            "averageSkillLevel": 2.06,
+            "averageSpecializeLevel": [
+                0.05,
+                0.07
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 491,
+            "characterId": "char_373_lionhd",
+            "averageEvolvePhase": 0,
+            "averageLevel": 25,
+            "averageCalculatedLevel": 25.14663951120163,
+            "averageSkillLevel": 1.92,
+            "averageSpecializeLevel": [
+                0.03,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 463,
+            "characterId": "char_363_toddi",
+            "averageEvolvePhase": 0,
+            "averageLevel": 24,
+            "averageCalculatedLevel": 24.632829373650107,
+            "averageSkillLevel": 1.89,
+            "averageSpecializeLevel": [
+                0.06,
+                0.09
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_122_beagle",
+            "averageEvolvePhase": 2,
+            "averageLevel": 20,
+            "averageCalculatedLevel": 60.92397660818713,
+            "averageSkillLevel": 4.01,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 341,
+            "characterId": "char_4015_spuria",
+            "averageEvolvePhase": 0,
+            "averageLevel": 18,
+            "averageCalculatedLevel": 18.131964809384165,
+            "averageSkillLevel": 1.52,
+            "averageSpecializeLevel": [
+                0.06,
+                0.09
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 339,
+            "characterId": "char_391_rosmon",
+            "averageEvolvePhase": 2,
+            "averageLevel": 52,
+            "averageCalculatedLevel": 182.2566371681416,
+            "averageSkillLevel": 6.65,
+            "averageSpecializeLevel": [
+                0.33,
+                0.55,
+                1.36
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.11
+            }
+        },
+        {
+            "sampleCount": 504,
+            "characterId": "char_493_firwhl",
+            "averageEvolvePhase": 0,
+            "averageLevel": 34,
+            "averageCalculatedLevel": 34.517857142857146,
+            "averageSkillLevel": 2.24,
+            "averageSpecializeLevel": [
+                0.08,
+                0.11
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_469_indigo",
+            "averageEvolvePhase": 0,
+            "averageLevel": 36,
+            "averageCalculatedLevel": 36.48927875243665,
+            "averageSkillLevel": 2.3,
+            "averageSpecializeLevel": [
+                0.05,
+                0.11
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.05
+            }
+        },
+        {
+            "sampleCount": 446,
+            "characterId": "char_263_skadi",
+            "averageEvolvePhase": 2,
+            "averageLevel": 54,
+            "averageCalculatedLevel": 184.9798206278027,
+            "averageSkillLevel": 6.59,
+            "averageSpecializeLevel": [
+                0.19,
+                1.42,
+                1.44
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.83,
+                "2": 1.51
+            }
+        },
+        {
+            "sampleCount": 418,
+            "characterId": "char_4065_judge",
+            "averageEvolvePhase": 2,
+            "averageLevel": 51,
+            "averageCalculatedLevel": 181.8397129186603,
+            "averageSkillLevel": 6.43,
+            "averageSpecializeLevel": [
+                0.39,
+                0.33,
+                2.23
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 469,
+            "characterId": "char_4040_rockr",
+            "averageEvolvePhase": 0,
+            "averageLevel": 22,
+            "averageCalculatedLevel": 22.865671641791046,
+            "averageSkillLevel": 1.72,
+            "averageSpecializeLevel": [
+                0.04,
+                0.07
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 494,
+            "characterId": "char_166_skfire",
+            "averageEvolvePhase": 1,
+            "averageLevel": 24,
+            "averageCalculatedLevel": 74.19433198380567,
+            "averageSkillLevel": 3.84,
+            "averageSpecializeLevel": [
+                0.02,
+                0.18
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 493,
+            "characterId": "char_449_glider",
+            "averageEvolvePhase": 2,
+            "averageLevel": 21,
+            "averageCalculatedLevel": 141.78904665314403,
+            "averageSkillLevel": 6.19,
+            "averageSpecializeLevel": [
+                1.31,
+                0.11
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 493,
+            "characterId": "char_163_hpsts",
+            "averageEvolvePhase": 1,
+            "averageLevel": 9,
+            "averageCalculatedLevel": 59.09330628803245,
+            "averageSkillLevel": 2.97,
+            "averageSpecializeLevel": [
+                0.05,
+                0.09
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 488,
+            "characterId": "char_489_serum",
+            "averageEvolvePhase": 0,
+            "averageLevel": 24,
+            "averageCalculatedLevel": 24.5,
+            "averageSkillLevel": 1.86,
+            "averageSpecializeLevel": [
+                0.03,
+                0.04
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 499,
+            "characterId": "char_4000_jnight",
+            "averageEvolvePhase": 2,
+            "averageLevel": 26,
+            "averageCalculatedLevel": 26.16432865731463,
+            "averageSkillLevel": 1,
+            "averageSpecializeLevel": [],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 464,
+            "characterId": "char_422_aurora",
+            "averageEvolvePhase": 0,
+            "averageLevel": 30,
+            "averageCalculatedLevel": 30.325431034482758,
+            "averageSkillLevel": 2.06,
+            "averageSpecializeLevel": [
+                0.06,
+                0.09
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_211_adnach",
+            "averageEvolvePhase": 2,
+            "averageLevel": 9,
+            "averageCalculatedLevel": 49.94541910331384,
+            "averageSkillLevel": 3.32,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_110_deepcl",
+            "averageEvolvePhase": 0,
+            "averageLevel": 37,
+            "averageCalculatedLevel": 37.55945419103314,
+            "averageSkillLevel": 2.51,
+            "averageSpecializeLevel": [
+                0.1,
+                0.08
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.03
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_289_gyuki",
+            "averageEvolvePhase": 0,
+            "averageLevel": 27,
+            "averageCalculatedLevel": 27.69980506822612,
+            "averageSkillLevel": 1.84,
+            "averageSpecializeLevel": [
+                0.03,
+                0.05
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 487,
+            "characterId": "char_1029_yato2",
+            "averageEvolvePhase": 2,
+            "averageLevel": 77,
+            "averageCalculatedLevel": 207.14989733059548,
+            "averageSkillLevel": 6.96,
+            "averageSpecializeLevel": [
+                0.84,
+                2.7,
+                2.56
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.99
+            }
+        },
+        {
+            "sampleCount": 509,
+            "characterId": "char_4106_bryota",
+            "averageEvolvePhase": 0,
+            "averageLevel": 29,
+            "averageCalculatedLevel": 29.577603143418468,
+            "averageSkillLevel": 1.47,
+            "averageSpecializeLevel": [
+                0.03,
+                0.05
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 487,
+            "characterId": "char_226_hmau",
+            "averageEvolvePhase": 0,
+            "averageLevel": 33,
+            "averageCalculatedLevel": 33.28952772073922,
+            "averageSkillLevel": 2.14,
+            "averageSpecializeLevel": [
+                0.06,
+                0.09
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 504,
+            "characterId": "char_411_tomimi",
+            "averageEvolvePhase": 0,
+            "averageLevel": 26,
+            "averageCalculatedLevel": 26.279761904761905,
+            "averageSkillLevel": 1.87,
+            "averageSpecializeLevel": [
+                0.04,
+                0.04
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 509,
+            "characterId": "char_325_bison",
+            "averageEvolvePhase": 0,
+            "averageLevel": 22,
+            "averageCalculatedLevel": 22.459724950884087,
+            "averageSkillLevel": 1.74,
+            "averageSpecializeLevel": [
+                0.04,
+                0.05
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 487,
+            "characterId": "char_115_headbr",
+            "averageEvolvePhase": 1,
+            "averageLevel": 38,
+            "averageCalculatedLevel": 88.14579055441479,
+            "averageSkillLevel": 4.43,
+            "averageSpecializeLevel": [
+                0.13,
+                0.18
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_452_bstalk",
+            "averageEvolvePhase": 1,
+            "averageLevel": 5,
+            "averageCalculatedLevel": 50.92007797270955,
+            "averageSkillLevel": 3.32,
+            "averageSpecializeLevel": [
+                0.1,
+                0.15
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 498,
+            "characterId": "char_107_liskam",
+            "averageEvolvePhase": 1,
+            "averageLevel": 63,
+            "averageCalculatedLevel": 113.78112449799197,
+            "averageSkillLevel": 5.12,
+            "averageSpecializeLevel": [
+                0.21,
+                0.08
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_109_fmout",
+            "averageEvolvePhase": 1,
+            "averageLevel": 34,
+            "averageCalculatedLevel": 79.06432748538012,
+            "averageSkillLevel": 4.45,
+            "averageSpecializeLevel": [
+                0.02,
+                0.07
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 511,
+            "characterId": "char_135_halo",
+            "averageEvolvePhase": 0,
+            "averageLevel": 25,
+            "averageCalculatedLevel": 25.868884540117417,
+            "averageSkillLevel": 1.9,
+            "averageSpecializeLevel": [
+                0.05,
+                0.05
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.03
+            }
+        },
+        {
+            "sampleCount": 480,
+            "characterId": "char_219_meteo",
+            "averageEvolvePhase": 1,
+            "averageLevel": 58,
+            "averageCalculatedLevel": 108.71041666666666,
+            "averageSkillLevel": 5,
+            "averageSpecializeLevel": [
+                0.78,
+                0.1
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.16
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_193_frostl",
+            "averageEvolvePhase": 1,
+            "averageLevel": 1,
+            "averageCalculatedLevel": 46.66471734892787,
+            "averageSkillLevel": 2.46,
+            "averageSpecializeLevel": [
+                0.04,
+                0.05
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 356,
+            "characterId": "char_2012_typhon",
+            "averageEvolvePhase": 2,
+            "averageLevel": 74,
+            "averageCalculatedLevel": 204.30337078651687,
+            "averageSkillLevel": 6.91,
+            "averageSpecializeLevel": [
+                0.07,
+                2.63,
+                2.67
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 2.26
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_121_lava",
+            "averageEvolvePhase": 2,
+            "averageLevel": 42,
+            "averageCalculatedLevel": 82.11111111111111,
+            "averageSkillLevel": 5.18,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_118_yuki",
+            "averageEvolvePhase": 1,
+            "averageLevel": 34,
+            "averageCalculatedLevel": 79.92007797270955,
+            "averageSkillLevel": 4.39,
+            "averageSpecializeLevel": [
+                0.03,
+                0.1
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 485,
+            "characterId": "char_4043_erato",
+            "averageEvolvePhase": 1,
+            "averageLevel": 11,
+            "averageCalculatedLevel": 61.898969072164945,
+            "averageSkillLevel": 3.66,
+            "averageSpecializeLevel": [
+                0.13,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 496,
+            "characterId": "char_143_ghost",
+            "averageEvolvePhase": 2,
+            "averageLevel": 39,
+            "averageCalculatedLevel": 159.3266129032258,
+            "averageSkillLevel": 6.42,
+            "averageSpecializeLevel": [
+                0.17,
+                1.95
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.17
+            }
+        },
+        {
+            "sampleCount": 471,
+            "characterId": "char_4016_kazema",
+            "averageEvolvePhase": 1,
+            "averageLevel": 1,
+            "averageCalculatedLevel": 51.010615711252655,
+            "averageSkillLevel": 2.83,
+            "averageSpecializeLevel": [
+                0.19,
+                0.16
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.03
+            }
+        },
+        {
+            "sampleCount": 506,
+            "characterId": "char_4014_lunacu",
+            "averageEvolvePhase": 0,
+            "averageLevel": 18,
+            "averageCalculatedLevel": 18.059288537549406,
+            "averageSkillLevel": 1.56,
+            "averageSpecializeLevel": [
+                0.03,
+                0.05
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 402,
+            "characterId": "char_197_poca",
+            "averageEvolvePhase": 2,
+            "averageLevel": 43,
+            "averageCalculatedLevel": 173.49253731343285,
+            "averageSkillLevel": 6.31,
+            "averageSpecializeLevel": [
+                0.05,
+                1.05,
+                1.55
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.84
+            }
+        },
+        {
+            "sampleCount": 501,
+            "characterId": "char_4066_highmo",
+            "averageEvolvePhase": 1,
+            "averageLevel": 45,
+            "averageCalculatedLevel": 95.24750499001996,
+            "averageSkillLevel": 4.29,
+            "averageSpecializeLevel": [
+                0.71,
+                0.27
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 485,
+            "characterId": "char_473_mberry",
+            "averageEvolvePhase": 1,
+            "averageLevel": 38,
+            "averageCalculatedLevel": 88.38350515463918,
+            "averageSkillLevel": 4.35,
+            "averageSpecializeLevel": [
+                0.31,
+                0.41
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 505,
+            "characterId": "char_4047_pianst",
+            "averageEvolvePhase": 0,
+            "averageLevel": 33,
+            "averageCalculatedLevel": 33.94653465346535,
+            "averageSkillLevel": 1.64,
+            "averageSpecializeLevel": [
+                0.02,
+                0.03
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 409,
+            "characterId": "char_4027_heyak",
+            "averageEvolvePhase": 1,
+            "averageLevel": 67,
+            "averageCalculatedLevel": 117.03422982885085,
+            "averageSkillLevel": 4.7,
+            "averageSpecializeLevel": [
+                0.1,
+                0.19,
+                0.7
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.04
+            }
+        },
+        {
+            "sampleCount": 401,
+            "characterId": "char_2023_ling",
+            "averageEvolvePhase": 2,
+            "averageLevel": 81,
+            "averageCalculatedLevel": 211.48379052369077,
+            "averageSkillLevel": 6.96,
+            "averageSpecializeLevel": [
+                0.44,
+                1.57,
+                2.88
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 2.73
+            }
+        },
+        {
+            "sampleCount": 433,
+            "characterId": "char_188_helage",
+            "averageEvolvePhase": 2,
+            "averageLevel": 34,
+            "averageCalculatedLevel": 164.40646651270208,
+            "averageSkillLevel": 6.17,
+            "averageSpecializeLevel": [
+                0.32,
+                1.44,
+                0.59
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.1,
+                "2": 1.01
+            }
+        },
+        {
+            "sampleCount": 510,
+            "characterId": "char_491_humus",
+            "averageEvolvePhase": 0,
+            "averageLevel": 31,
+            "averageCalculatedLevel": 31.919607843137253,
+            "averageSkillLevel": 2.3,
+            "averageSpecializeLevel": [
+                0.13,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 500,
+            "characterId": "char_436_whispr",
+            "averageEvolvePhase": 1,
+            "averageLevel": 43,
+            "averageCalculatedLevel": 93.154,
+            "averageSkillLevel": 4.49,
+            "averageSpecializeLevel": [
+                0.07,
+                0.34
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.03
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_337_utage",
+            "averageEvolvePhase": 1,
+            "averageLevel": 2,
+            "averageCalculatedLevel": 47.239766081871345,
+            "averageSkillLevel": 3.19,
+            "averageSpecializeLevel": [
+                0.04,
+                0.18
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 491,
+            "characterId": "char_158_milu",
+            "averageEvolvePhase": 1,
+            "averageLevel": 16,
+            "averageCalculatedLevel": 66.78818737270876,
+            "averageSkillLevel": 3.47,
+            "averageSpecializeLevel": [
+                0.15,
+                0.22
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_290_vigna",
+            "averageEvolvePhase": 1,
+            "averageLevel": 32,
+            "averageCalculatedLevel": 77.5692007797271,
+            "averageSkillLevel": 4.14,
+            "averageSpecializeLevel": [
+                0.04,
+                0.09
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 338,
+            "characterId": "char_113_cqbw",
+            "averageEvolvePhase": 2,
+            "averageLevel": 59,
+            "averageCalculatedLevel": 189.97041420118344,
+            "averageSkillLevel": 6.77,
+            "averageSpecializeLevel": [
+                0.19,
+                1.95,
+                1.52
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.18,
+                "2": 1.05
+            }
+        },
+        {
+            "sampleCount": 478,
+            "characterId": "char_415_flint",
+            "averageEvolvePhase": 0,
+            "averageLevel": 17,
+            "averageCalculatedLevel": 17.730125523012553,
+            "averageSkillLevel": 1.62,
+            "averageSpecializeLevel": [
+                0.03,
+                0.04
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 495,
+            "characterId": "char_4013_kjera",
+            "averageEvolvePhase": 0,
+            "averageLevel": 35,
+            "averageCalculatedLevel": 35.537373737373734,
+            "averageSkillLevel": 2.34,
+            "averageSpecializeLevel": [
+                0.02,
+                0.11
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_301_cutter",
+            "averageEvolvePhase": 1,
+            "averageLevel": 1,
+            "averageCalculatedLevel": 46.64522417153996,
+            "averageSkillLevel": 2.96,
+            "averageSpecializeLevel": [
+                0.22,
+                0.19
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.05
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_185_frncat",
+            "averageEvolvePhase": 1,
+            "averageLevel": 6,
+            "averageCalculatedLevel": 51.629629629629626,
+            "averageSkillLevel": 3.36,
+            "averageSpecializeLevel": [
+                0.15,
+                0.05
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 482,
+            "characterId": "char_308_swire",
+            "averageEvolvePhase": 0,
+            "averageLevel": 30,
+            "averageCalculatedLevel": 30.502074688796682,
+            "averageSkillLevel": 2.05,
+            "averageSpecializeLevel": [
+                0.03,
+                0.03
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 419,
+            "characterId": "char_322_lmlee",
+            "averageEvolvePhase": 2,
+            "averageLevel": 45,
+            "averageCalculatedLevel": 175.8949880668258,
+            "averageSkillLevel": 6.31,
+            "averageSpecializeLevel": [
+                0.11,
+                0.31,
+                1.93
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.33
+            }
+        },
+        {
+            "sampleCount": 395,
+            "characterId": "char_420_flamtl",
+            "averageEvolvePhase": 2,
+            "averageLevel": 29,
+            "averageCalculatedLevel": 159.68354430379748,
+            "averageSkillLevel": 6.21,
+            "averageSpecializeLevel": [
+                0.09,
+                0.72,
+                1.26
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.05,
+                "2": 1
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_503_rang",
+            "averageEvolvePhase": 2,
+            "averageLevel": 25,
+            "averageCalculatedLevel": 25.705653021442494,
+            "averageSkillLevel": 1,
+            "averageSpecializeLevel": [],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_133_mm",
+            "averageEvolvePhase": 1,
+            "averageLevel": 2,
+            "averageCalculatedLevel": 47.14424951267056,
+            "averageSkillLevel": 3.02,
+            "averageSpecializeLevel": [
+                0.21,
+                0.18
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 502,
+            "characterId": "char_4078_bdhkgt",
+            "averageEvolvePhase": 0,
+            "averageLevel": 17,
+            "averageCalculatedLevel": 17.90239043824701,
+            "averageSkillLevel": 1.47,
+            "averageSpecializeLevel": [
+                0.04,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 488,
+            "characterId": "char_427_vigil",
+            "averageEvolvePhase": 1,
+            "averageLevel": 47,
+            "averageCalculatedLevel": 97.83196721311475,
+            "averageSkillLevel": 4.28,
+            "averageSpecializeLevel": [
+                0.1,
+                0.12,
+                0.21
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 469,
+            "characterId": "char_349_chiave",
+            "averageEvolvePhase": 0,
+            "averageLevel": 27,
+            "averageCalculatedLevel": 27.183368869936036,
+            "averageSkillLevel": 1.89,
+            "averageSpecializeLevel": [
+                0.06,
+                0.12
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 485,
+            "characterId": "char_4054_malist",
+            "averageEvolvePhase": 0,
+            "averageLevel": 48,
+            "averageCalculatedLevel": 48.047422680412375,
+            "averageSkillLevel": 1.79,
+            "averageSpecializeLevel": [
+                0.03,
+                0.04
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 474,
+            "characterId": "char_336_folivo",
+            "averageEvolvePhase": 1,
+            "averageLevel": 45,
+            "averageCalculatedLevel": 95.71097046413502,
+            "averageSkillLevel": 4.38,
+            "averageSpecializeLevel": [
+                0.07,
+                0.51
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.05
+            }
+        },
+        {
+            "sampleCount": 508,
+            "characterId": "char_1011_lava2",
+            "averageEvolvePhase": 1,
+            "averageLevel": 2,
+            "averageCalculatedLevel": 52.92125984251968,
+            "averageSkillLevel": 2.72,
+            "averageSpecializeLevel": [
+                0.03,
+                0.05
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 376,
+            "characterId": "char_1020_reed2",
+            "averageEvolvePhase": 2,
+            "averageLevel": 73,
+            "averageCalculatedLevel": 203.93351063829786,
+            "averageSkillLevel": 6.95,
+            "averageSpecializeLevel": [
+                0.08,
+                2.64,
+                2.43
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 509,
+            "characterId": "char_486_takila",
+            "averageEvolvePhase": 1,
+            "averageLevel": 39,
+            "averageCalculatedLevel": 89.25147347740668,
+            "averageSkillLevel": 4.02,
+            "averageSpecializeLevel": [
+                0.06,
+                0.31
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 510,
+            "characterId": "char_376_therex",
+            "averageEvolvePhase": 2,
+            "averageLevel": 28,
+            "averageCalculatedLevel": 28.474509803921567,
+            "averageSkillLevel": 1,
+            "averageSpecializeLevel": [],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 476,
+            "characterId": "char_106_franka",
+            "averageEvolvePhase": 0,
+            "averageLevel": 37,
+            "averageCalculatedLevel": 37.09453781512605,
+            "averageSkillLevel": 2.29,
+            "averageSpecializeLevel": [
+                0.03,
+                0.05
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 446,
+            "characterId": "char_1027_greyy2",
+            "averageEvolvePhase": 1,
+            "averageLevel": 5,
+            "averageCalculatedLevel": 55.710762331838566,
+            "averageSkillLevel": 2.25,
+            "averageSpecializeLevel": [
+                0.07,
+                0.09
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.04
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_198_blackd",
+            "averageEvolvePhase": 1,
+            "averageLevel": 11,
+            "averageCalculatedLevel": 56.87134502923977,
+            "averageSkillLevel": 3.41,
+            "averageSpecializeLevel": [
+                0.04,
+                0.05
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 485,
+            "characterId": "char_148_nearl",
+            "averageEvolvePhase": 2,
+            "averageLevel": 2,
+            "averageCalculatedLevel": 122.85979381443299,
+            "averageSkillLevel": 5.58,
+            "averageSpecializeLevel": [
+                0.64,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.03
+            }
+        },
+        {
+            "sampleCount": 466,
+            "characterId": "char_306_leizi",
+            "averageEvolvePhase": 0,
+            "averageLevel": 41,
+            "averageCalculatedLevel": 41.30472103004292,
+            "averageSkillLevel": 2.37,
+            "averageSpecializeLevel": [
+                0.03,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 483,
+            "characterId": "char_496_wildmn",
+            "averageEvolvePhase": 0,
+            "averageLevel": 40,
+            "averageCalculatedLevel": 40.95031055900621,
+            "averageSkillLevel": 2.56,
+            "averageSpecializeLevel": [
+                0.05,
+                0.05
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 469,
+            "characterId": "char_4055_bgsnow",
+            "averageEvolvePhase": 2,
+            "averageLevel": 76,
+            "averageCalculatedLevel": 206.6226012793177,
+            "averageSkillLevel": 6.92,
+            "averageSpecializeLevel": [
+                0.28,
+                0.9,
+                2.8
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 2.25
+            }
+        },
+        {
+            "sampleCount": 507,
+            "characterId": "char_345_folnic",
+            "averageEvolvePhase": 0,
+            "averageLevel": 24,
+            "averageCalculatedLevel": 24.899408284023668,
+            "averageSkillLevel": 1.97,
+            "averageSpecializeLevel": [
+                0.04,
+                0.04
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 489,
+            "characterId": "char_241_panda",
+            "averageEvolvePhase": 1,
+            "averageLevel": 32,
+            "averageCalculatedLevel": 82.7321063394683,
+            "averageSkillLevel": 4.81,
+            "averageSpecializeLevel": [
+                0.53,
+                0.51
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 343,
+            "characterId": "char_2015_dusk",
+            "averageEvolvePhase": 2,
+            "averageLevel": 55,
+            "averageCalculatedLevel": 185.54810495626822,
+            "averageSkillLevel": 6.74,
+            "averageSpecializeLevel": [
+                1.07,
+                0.64,
+                1.28
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.1,
+                "2": 1.13
+            }
+        },
+        {
+            "sampleCount": 486,
+            "characterId": "char_215_mantic",
+            "averageEvolvePhase": 1,
+            "averageLevel": 67,
+            "averageCalculatedLevel": 117.26954732510288,
+            "averageSkillLevel": 5.65,
+            "averageSpecializeLevel": [
+                0.99,
+                0.15
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.12
+            }
+        },
+        {
+            "sampleCount": 485,
+            "characterId": "char_4004_pudd",
+            "averageEvolvePhase": 0,
+            "averageLevel": 19,
+            "averageCalculatedLevel": 19.175257731958762,
+            "averageSkillLevel": 1.63,
+            "averageSpecializeLevel": [
+                0.02,
+                0.02
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 419,
+            "characterId": "char_4009_irene",
+            "averageEvolvePhase": 2,
+            "averageLevel": 61,
+            "averageCalculatedLevel": 191.1050119331742,
+            "averageSkillLevel": 6.67,
+            "averageSpecializeLevel": [
+                0.27,
+                0.32,
+                2.5
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.3
+            }
+        },
+        {
+            "sampleCount": 333,
+            "characterId": "char_4087_ines",
+            "averageEvolvePhase": 2,
+            "averageLevel": 69,
+            "averageCalculatedLevel": 199.82282282282281,
+            "averageSkillLevel": 6.95,
+            "averageSpecializeLevel": [
+                0.18,
+                2.43,
+                1.86
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_285_medic2",
+            "averageEvolvePhase": 2,
+            "averageLevel": 29,
+            "averageCalculatedLevel": 29.044834307992204,
+            "averageSkillLevel": 1,
+            "averageSpecializeLevel": [],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_298_susuro",
+            "averageEvolvePhase": 1,
+            "averageLevel": 31,
+            "averageCalculatedLevel": 76.43859649122807,
+            "averageSkillLevel": 4.44,
+            "averageSpecializeLevel": [
+                0.03,
+                0.37
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.03
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_237_gravel",
+            "averageEvolvePhase": 2,
+            "averageLevel": 10,
+            "averageCalculatedLevel": 115.74463937621833,
+            "averageSkillLevel": 6.24,
+            "averageSpecializeLevel": [
+                0.11,
+                0.36
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.48
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_253_greyy",
+            "averageEvolvePhase": 0,
+            "averageLevel": 33,
+            "averageCalculatedLevel": 33.124756335282655,
+            "averageSkillLevel": 1.82,
+            "averageSpecializeLevel": [
+                0.03,
+                0.03
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 486,
+            "characterId": "char_344_beewax",
+            "averageEvolvePhase": 0,
+            "averageLevel": 37,
+            "averageCalculatedLevel": 37.03086419753087,
+            "averageSkillLevel": 2.38,
+            "averageSpecializeLevel": [
+                0.05,
+                0.12
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 491,
+            "characterId": "char_4017_puzzle",
+            "averageEvolvePhase": 0,
+            "averageLevel": 22,
+            "averageCalculatedLevel": 22.545824847250508,
+            "averageSkillLevel": 2,
+            "averageSpecializeLevel": [
+                0.08,
+                0.08
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 284,
+            "characterId": "char_1032_excu2",
+            "averageEvolvePhase": 2,
+            "averageLevel": 45,
+            "averageCalculatedLevel": 175.2218309859155,
+            "averageSkillLevel": 6.32,
+            "averageSpecializeLevel": [
+                0.49,
+                0.42,
+                1.79
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.46
+            }
+        },
+        {
+            "sampleCount": 432,
+            "characterId": "char_225_haak",
+            "averageEvolvePhase": 2,
+            "averageLevel": 22,
+            "averageCalculatedLevel": 152.31712962962962,
+            "averageSkillLevel": 6.2,
+            "averageSpecializeLevel": [
+                0.18,
+                0.18,
+                1.98
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.07
+            }
+        },
+        {
+            "sampleCount": 481,
+            "characterId": "char_455_nothin",
+            "averageEvolvePhase": 1,
+            "averageLevel": 15,
+            "averageCalculatedLevel": 65.48440748440748,
+            "averageSkillLevel": 3.28,
+            "averageSpecializeLevel": [
+                0.07,
+                0.16
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.11
+            }
+        },
+        {
+            "sampleCount": 480,
+            "characterId": "char_180_amgoat",
+            "averageEvolvePhase": 2,
+            "averageLevel": 79,
+            "averageCalculatedLevel": 209.30208333333334,
+            "averageSkillLevel": 6.94,
+            "averageSpecializeLevel": [
+                0.12,
+                2.69,
+                2.86
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.91
+            }
+        },
+        {
+            "sampleCount": 420,
+            "characterId": "char_466_qanik",
+            "averageEvolvePhase": 0,
+            "averageLevel": 31,
+            "averageCalculatedLevel": 31.214285714285715,
+            "averageSkillLevel": 2.5,
+            "averageSpecializeLevel": [
+                0.04,
+                0.08
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_236_rope",
+            "averageEvolvePhase": 1,
+            "averageLevel": 16,
+            "averageCalculatedLevel": 61.654970760233915,
+            "averageSkillLevel": 5.1,
+            "averageSpecializeLevel": [
+                0.1,
+                0.13
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 421,
+            "characterId": "char_437_mizuki",
+            "averageEvolvePhase": 2,
+            "averageLevel": 43,
+            "averageCalculatedLevel": 173.40380047505937,
+            "averageSkillLevel": 6.4,
+            "averageSpecializeLevel": [
+                1.67,
+                0.43,
+                0.37
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.48,
+                "2": 1.16
+            }
+        },
+        {
+            "sampleCount": 437,
+            "characterId": "char_2024_chyue",
+            "averageEvolvePhase": 2,
+            "averageLevel": 70,
+            "averageCalculatedLevel": 200.8054919908467,
+            "averageSkillLevel": 6.81,
+            "averageSpecializeLevel": [
+                0.22,
+                0.42,
+                2.8
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 502,
+            "characterId": "char_171_bldsk",
+            "averageEvolvePhase": 2,
+            "averageLevel": 43,
+            "averageCalculatedLevel": 163.4760956175299,
+            "averageSkillLevel": 6.88,
+            "averageSpecializeLevel": [
+                0.72,
+                2.23
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.12
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_272_strong",
+            "averageEvolvePhase": 2,
+            "averageLevel": 11,
+            "averageCalculatedLevel": 116.22417153996102,
+            "averageSkillLevel": 5.81,
+            "averageSpecializeLevel": [
+                0.22,
+                1.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.31
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_381_bubble",
+            "averageEvolvePhase": 0,
+            "averageLevel": 31,
+            "averageCalculatedLevel": 31.82261208576998,
+            "averageSkillLevel": 1.67,
+            "averageSpecializeLevel": [
+                0.03,
+                0.08
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 421,
+            "characterId": "char_4071_peper",
+            "averageEvolvePhase": 0,
+            "averageLevel": 29,
+            "averageCalculatedLevel": 29.954869358669832,
+            "averageSkillLevel": 1.97,
+            "averageSpecializeLevel": [
+                0.04,
+                0.06
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 384,
+            "characterId": "char_4039_horn",
+            "averageEvolvePhase": 2,
+            "averageLevel": 74,
+            "averageCalculatedLevel": 204.70572916666666,
+            "averageSkillLevel": 6.98,
+            "averageSpecializeLevel": [
+                2.57,
+                1.62,
+                2.39
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_209_ardign",
+            "averageEvolvePhase": 2,
+            "averageLevel": 34,
+            "averageCalculatedLevel": 74.35477582846003,
+            "averageSkillLevel": 5.15,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_151_myrtle",
+            "averageEvolvePhase": 2,
+            "averageLevel": 46,
+            "averageCalculatedLevel": 151.22027290448344,
+            "averageSkillLevel": 6.98,
+            "averageSpecializeLevel": [
+                2.88,
+                0.78
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.3
+            }
+        },
+        {
+            "sampleCount": 487,
+            "characterId": "char_003_kalts",
+            "averageEvolvePhase": 2,
+            "averageLevel": 80,
+            "averageCalculatedLevel": 210.5195071868583,
+            "averageSkillLevel": 6.96,
+            "averageSpecializeLevel": [
+                0.13,
+                1.96,
+                2.9
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 2.08,
+                "2": 1.34
+            }
+        },
+        {
+            "sampleCount": 390,
+            "characterId": "char_1014_nearl2",
+            "averageEvolvePhase": 2,
+            "averageLevel": 79,
+            "averageCalculatedLevel": 209.64102564102564,
+            "averageSkillLevel": 7,
+            "averageSpecializeLevel": [
+                1.01,
+                2.74,
+                2.47
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 2.15
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_240_wyvern",
+            "averageEvolvePhase": 2,
+            "averageLevel": 20,
+            "averageCalculatedLevel": 60.44444444444444,
+            "averageSkillLevel": 4.44,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 449,
+            "characterId": "char_248_mgllan",
+            "averageEvolvePhase": 2,
+            "averageLevel": 12,
+            "averageCalculatedLevel": 142.23385300668153,
+            "averageSkillLevel": 5.64,
+            "averageSpecializeLevel": [
+                0.63,
+                0.22,
+                0.61
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.04,
+                "2": 1.04
+            }
+        },
+        {
+            "sampleCount": 506,
+            "characterId": "char_242_otter",
+            "averageEvolvePhase": 1,
+            "averageLevel": 25,
+            "averageCalculatedLevel": 75.04347826086956,
+            "averageSkillLevel": 3.89,
+            "averageSpecializeLevel": [
+                0.05,
+                0.3
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 496,
+            "characterId": "char_476_blkngt",
+            "averageEvolvePhase": 1,
+            "averageLevel": 11,
+            "averageCalculatedLevel": 61.12096774193548,
+            "averageSkillLevel": 3.42,
+            "averageSpecializeLevel": [
+                0.08,
+                0.4
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 432,
+            "characterId": "char_2013_cerber",
+            "averageEvolvePhase": 2,
+            "averageLevel": 50,
+            "averageCalculatedLevel": 180.4398148148148,
+            "averageSkillLevel": 6.56,
+            "averageSpecializeLevel": [
+                0.23,
+                1.84,
+                0.34
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.59,
+                "2": 1.01
+            }
+        },
+        {
+            "sampleCount": 491,
+            "characterId": "char_1001_amiya2",
+            "averageEvolvePhase": 2,
+            "averageLevel": 55,
+            "averageCalculatedLevel": 175.42566191446028,
+            "averageSkillLevel": 6.97,
+            "averageSpecializeLevel": [
+                0.51,
+                0.98
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 488,
+            "characterId": "char_145_prove",
+            "averageEvolvePhase": 0,
+            "averageLevel": 40,
+            "averageCalculatedLevel": 40.63934426229508,
+            "averageSkillLevel": 2.4,
+            "averageSpecializeLevel": [
+                0.06,
+                0.09
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 503,
+            "characterId": "char_401_elysm",
+            "averageEvolvePhase": 2,
+            "averageLevel": 26,
+            "averageCalculatedLevel": 146.3061630218688,
+            "averageSkillLevel": 6.48,
+            "averageSpecializeLevel": [
+                1.79,
+                2.03
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.06
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_187_ccheal",
+            "averageEvolvePhase": 1,
+            "averageLevel": 18,
+            "averageCalculatedLevel": 63.99610136452242,
+            "averageSkillLevel": 3.37,
+            "averageSpecializeLevel": [
+                0.06,
+                0.02
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 495,
+            "characterId": "char_433_windft",
+            "averageEvolvePhase": 0,
+            "averageLevel": 22,
+            "averageCalculatedLevel": 22.064646464646465,
+            "averageSkillLevel": 1.63,
+            "averageSpecializeLevel": [
+                0.06,
+                0.07
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 510,
+            "characterId": "char_140_whitew",
+            "averageEvolvePhase": 2,
+            "averageLevel": 56,
+            "averageCalculatedLevel": 176.50196078431372,
+            "averageSkillLevel": 6.81,
+            "averageSpecializeLevel": [
+                0.08,
+                2.06
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 375,
+            "characterId": "char_459_tachak",
+            "averageEvolvePhase": 0,
+            "averageLevel": 49,
+            "averageCalculatedLevel": 49.696,
+            "averageSkillLevel": 2.84,
+            "averageSpecializeLevel": [
+                0.07,
+                0.26
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.03
+            }
+        },
+        {
+            "sampleCount": 363,
+            "characterId": "char_426_billro",
+            "averageEvolvePhase": 2,
+            "averageLevel": 14,
+            "averageCalculatedLevel": 144.8512396694215,
+            "averageSkillLevel": 5.67,
+            "averageSpecializeLevel": [
+                0.07,
+                0.42,
+                1.16
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_284_spot",
+            "averageEvolvePhase": 2,
+            "averageLevel": 51,
+            "averageCalculatedLevel": 91.18518518518519,
+            "averageSkillLevel": 6.51,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 511,
+            "characterId": "char_4042_lumen",
+            "averageEvolvePhase": 2,
+            "averageLevel": 49,
+            "averageCalculatedLevel": 179.31311154598825,
+            "averageSkillLevel": 6.58,
+            "averageSpecializeLevel": [
+                0.2,
+                0.18,
+                2.04
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.09,
+                "2": 1.07
+            }
+        },
+        {
+            "sampleCount": 462,
+            "characterId": "char_222_bpipe",
+            "averageEvolvePhase": 2,
+            "averageLevel": 77,
+            "averageCalculatedLevel": 207.017316017316,
+            "averageSkillLevel": 6.95,
+            "averageSpecializeLevel": [
+                0.07,
+                2.5,
+                2.55
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 2.37
+            }
+        },
+        {
+            "sampleCount": 489,
+            "characterId": "char_157_dagda",
+            "averageEvolvePhase": 0,
+            "averageLevel": 11,
+            "averageCalculatedLevel": 11.832310838445808,
+            "averageSkillLevel": 1.31,
+            "averageSpecializeLevel": [
+                0.02,
+                0.02
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 470,
+            "characterId": "char_338_iris",
+            "averageEvolvePhase": 1,
+            "averageLevel": 9,
+            "averageCalculatedLevel": 59.52553191489362,
+            "averageSkillLevel": 2.72,
+            "averageSpecializeLevel": [
+                0.05,
+                0.09
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 385,
+            "characterId": "char_300_phenxi",
+            "averageEvolvePhase": 2,
+            "averageLevel": 64,
+            "averageCalculatedLevel": 194.35064935064935,
+            "averageSkillLevel": 6.87,
+            "averageSpecializeLevel": [
+                0.07,
+                1.89,
+                2.37
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.42
+            }
+        },
+        {
+            "sampleCount": 504,
+            "characterId": "char_128_plosis",
+            "averageEvolvePhase": 2,
+            "averageLevel": 53,
+            "averageCalculatedLevel": 173.0218253968254,
+            "averageSkillLevel": 6.78,
+            "averageSpecializeLevel": [
+                0.07,
+                1.23
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.79
+            }
+        },
+        {
+            "sampleCount": 347,
+            "characterId": "char_341_sntlla",
+            "averageEvolvePhase": 0,
+            "averageLevel": 18,
+            "averageCalculatedLevel": 18.70605187319885,
+            "averageSkillLevel": 1.51,
+            "averageSpecializeLevel": [
+                0.04,
+                0.07
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_196_sunbr",
+            "averageEvolvePhase": 1,
+            "averageLevel": 38,
+            "averageCalculatedLevel": 83.6842105263158,
+            "averageSkillLevel": 4.84,
+            "averageSpecializeLevel": [
+                0.19,
+                0.08
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.04
+            }
+        },
+        {
+            "sampleCount": 461,
+            "characterId": "char_367_swllow",
+            "averageEvolvePhase": 0,
+            "averageLevel": 46,
+            "averageCalculatedLevel": 46.40563991323211,
+            "averageSkillLevel": 2.7,
+            "averageSpecializeLevel": [
+                0.05,
+                0.08
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_502_nblade",
+            "averageEvolvePhase": 2,
+            "averageLevel": 29,
+            "averageCalculatedLevel": 29.460038986354775,
+            "averageSkillLevel": 1,
+            "averageSpecializeLevel": [],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 454,
+            "characterId": "char_431_ashlok",
+            "averageEvolvePhase": 0,
+            "averageLevel": 35,
+            "averageCalculatedLevel": 35.68942731277533,
+            "averageSkillLevel": 1.9,
+            "averageSpecializeLevel": [
+                0.03,
+                0.08
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 390,
+            "characterId": "char_423_blemsh",
+            "averageEvolvePhase": 2,
+            "averageLevel": 41,
+            "averageCalculatedLevel": 171.94358974358974,
+            "averageSkillLevel": 6.44,
+            "averageSpecializeLevel": [
+                0.4,
+                1.1,
+                0.77
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.08,
+                "2": 1.07
+            }
+        },
+        {
+            "sampleCount": 493,
+            "characterId": "char_4025_aprot2",
+            "averageEvolvePhase": 0,
+            "averageLevel": 31,
+            "averageCalculatedLevel": 31.649087221095336,
+            "averageSkillLevel": 2.25,
+            "averageSpecializeLevel": [
+                0.04,
+                0.09
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_501_durin",
+            "averageEvolvePhase": 2,
+            "averageLevel": 27,
+            "averageCalculatedLevel": 27.53216374269006,
+            "averageSkillLevel": 1,
+            "averageSpecializeLevel": [],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 436,
+            "characterId": "char_4019_ncdeer",
+            "averageEvolvePhase": 1,
+            "averageLevel": 4,
+            "averageCalculatedLevel": 54.21330275229358,
+            "averageSkillLevel": 2.78,
+            "averageSpecializeLevel": [
+                0.05,
+                0.1
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 500,
+            "characterId": "char_498_inside",
+            "averageEvolvePhase": 0,
+            "averageLevel": 15,
+            "averageCalculatedLevel": 15.456,
+            "averageSkillLevel": 1.41,
+            "averageSpecializeLevel": [
+                0.02,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 510,
+            "characterId": "char_355_ethan",
+            "averageEvolvePhase": 1,
+            "averageLevel": 58,
+            "averageCalculatedLevel": 103.32549019607843,
+            "averageSkillLevel": 6.26,
+            "averageSpecializeLevel": [
+                0.14,
+                0.51
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.36
+            }
+        },
+        {
+            "sampleCount": 460,
+            "characterId": "char_356_broca",
+            "averageEvolvePhase": 0,
+            "averageLevel": 35,
+            "averageCalculatedLevel": 35.28260869565217,
+            "averageSkillLevel": 2.2,
+            "averageSpecializeLevel": [
+                0.05,
+                0.09
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 420,
+            "characterId": "char_1023_ghost2",
+            "averageEvolvePhase": 2,
+            "averageLevel": 68,
+            "averageCalculatedLevel": 198.39761904761906,
+            "averageSkillLevel": 6.83,
+            "averageSpecializeLevel": [
+                0.13,
+                2.19,
+                1.53
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 2.44,
+                "2": 1.56
+            }
+        },
+        {
+            "sampleCount": 477,
+            "characterId": "char_201_moeshd",
+            "averageEvolvePhase": 0,
+            "averageLevel": 41,
+            "averageCalculatedLevel": 41.17610062893082,
+            "averageSkillLevel": 2.49,
+            "averageSpecializeLevel": [
+                0.05,
+                0.05
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 417,
+            "characterId": "char_362_saga",
+            "averageEvolvePhase": 2,
+            "averageLevel": 44,
+            "averageCalculatedLevel": 174.28057553956833,
+            "averageSkillLevel": 6.44,
+            "averageSpecializeLevel": [
+                0.09,
+                1.39,
+                1.32
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.06
+            }
+        },
+        {
+            "sampleCount": 476,
+            "characterId": "char_172_svrash",
+            "averageEvolvePhase": 2,
+            "averageLevel": 77,
+            "averageCalculatedLevel": 207.69117647058823,
+            "averageSkillLevel": 6.92,
+            "averageSpecializeLevel": [
+                0.37,
+                0.56,
+                2.89
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 512,
+            "characterId": "char_385_finlpp",
+            "averageEvolvePhase": 1,
+            "averageLevel": 13,
+            "averageCalculatedLevel": 58.03515625,
+            "averageSkillLevel": 3.1,
+            "averageSpecializeLevel": [
+                0.06,
+                0.07
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_235_jesica",
+            "averageEvolvePhase": 1,
+            "averageLevel": 23,
+            "averageCalculatedLevel": 68.43859649122807,
+            "averageSkillLevel": 3.84,
+            "averageSpecializeLevel": [
+                0.05,
+                0.04
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 438,
+            "characterId": "char_4064_mlynar",
+            "averageEvolvePhase": 2,
+            "averageLevel": 82,
+            "averageCalculatedLevel": 212.71689497716895,
+            "averageSkillLevel": 6.92,
+            "averageSpecializeLevel": [
+                0.1,
+                0.46,
+                2.94
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 431,
+            "characterId": "char_479_sleach",
+            "averageEvolvePhase": 2,
+            "averageLevel": 54,
+            "averageCalculatedLevel": 184.59860788863108,
+            "averageSkillLevel": 6.8,
+            "averageSpecializeLevel": [
+                1.78,
+                1.08,
+                2.28
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.08
+            }
+        },
+        {
+            "sampleCount": 348,
+            "characterId": "char_4048_doroth",
+            "averageEvolvePhase": 2,
+            "averageLevel": 53,
+            "averageCalculatedLevel": 183.29310344827587,
+            "averageSkillLevel": 6.53,
+            "averageSpecializeLevel": [
+                0.52,
+                1.3,
+                1.6
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.82
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_190_clour",
+            "averageEvolvePhase": 0,
+            "averageLevel": 41,
+            "averageCalculatedLevel": 41.12670565302144,
+            "averageSkillLevel": 1.79,
+            "averageSpecializeLevel": [
+                0.02,
+                0.04
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_126_shotst",
+            "averageEvolvePhase": 1,
+            "averageLevel": 18,
+            "averageCalculatedLevel": 63.80701754385965,
+            "averageSkillLevel": 3.59,
+            "averageSpecializeLevel": [
+                0.09,
+                0.05
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_102_texas",
+            "averageEvolvePhase": 2,
+            "averageLevel": 44,
+            "averageCalculatedLevel": 164.75438596491227,
+            "averageSkillLevel": 6.7,
+            "averageSpecializeLevel": [
+                0.28,
+                1.73
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.2
+            }
+        },
+        {
+            "sampleCount": 471,
+            "characterId": "char_379_sesa",
+            "averageEvolvePhase": 0,
+            "averageLevel": 18,
+            "averageCalculatedLevel": 18.9171974522293,
+            "averageSkillLevel": 1.63,
+            "averageSpecializeLevel": [
+                0.03,
+                0.04
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 454,
+            "characterId": "char_275_breeze",
+            "averageEvolvePhase": 0,
+            "averageLevel": 41,
+            "averageCalculatedLevel": 41.202643171806166,
+            "averageSkillLevel": 2.33,
+            "averageSpecializeLevel": [
+                0.03,
+                0.05
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 439,
+            "characterId": "char_1026_gvial2",
+            "averageEvolvePhase": 2,
+            "averageLevel": 67,
+            "averageCalculatedLevel": 197.89066059225513,
+            "averageSkillLevel": 6.82,
+            "averageSpecializeLevel": [
+                0.13,
+                2.49,
+                1.74
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.25
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_192_falco",
+            "averageEvolvePhase": 2,
+            "averageLevel": 22,
+            "averageCalculatedLevel": 62.333333333333336,
+            "averageSkillLevel": 3.99,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 459,
+            "characterId": "char_340_shwaz",
+            "averageEvolvePhase": 2,
+            "averageLevel": 56,
+            "averageCalculatedLevel": 186.86928104575162,
+            "averageSkillLevel": 6.6,
+            "averageSpecializeLevel": [
+                0.23,
+                0.39,
+                2.37
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.29,
+                "2": 1.19
+            }
+        },
+        {
+            "sampleCount": 502,
+            "characterId": "char_1030_noirc2",
+            "averageEvolvePhase": 1,
+            "averageLevel": 7,
+            "averageCalculatedLevel": 57.05179282868526,
+            "averageSkillLevel": 2.72,
+            "averageSpecializeLevel": [
+                0.13,
+                0.16
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.06
+            }
+        },
+        {
+            "sampleCount": 446,
+            "characterId": "char_400_weedy",
+            "averageEvolvePhase": 2,
+            "averageLevel": 52,
+            "averageCalculatedLevel": 182.85650224215246,
+            "averageSkillLevel": 6.72,
+            "averageSpecializeLevel": [
+                0.97,
+                1.76,
+                2.18
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.37
+            }
+        },
+        {
+            "sampleCount": 469,
+            "characterId": "char_252_bibeak",
+            "averageEvolvePhase": 1,
+            "averageLevel": 32,
+            "averageCalculatedLevel": 82.33475479744136,
+            "averageSkillLevel": 3.85,
+            "averageSpecializeLevel": [
+                0.06,
+                0.32
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.04
+            }
+        },
+        {
+            "sampleCount": 423,
+            "characterId": "char_416_zumama",
+            "averageEvolvePhase": 2,
+            "averageLevel": 29,
+            "averageCalculatedLevel": 159.65484633569739,
+            "averageSkillLevel": 6.03,
+            "averageSpecializeLevel": [
+                0.07,
+                0.15,
+                1.23
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.11,
+                "2": 1.03
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_210_stward",
+            "averageEvolvePhase": 2,
+            "averageLevel": 45,
+            "averageCalculatedLevel": 85.57894736842105,
+            "averageSkillLevel": 6.17,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 404,
+            "characterId": "char_472_pasngr",
+            "averageEvolvePhase": 2,
+            "averageLevel": 46,
+            "averageCalculatedLevel": 176.15841584158414,
+            "averageSkillLevel": 6.36,
+            "averageSpecializeLevel": [
+                0.15,
+                0.27,
+                2.1
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.47,
+                "2": 1.15
+            }
+        },
+        {
+            "sampleCount": 475,
+            "characterId": "char_112_siege",
+            "averageEvolvePhase": 2,
+            "averageLevel": 40,
+            "averageCalculatedLevel": 170.68421052631578,
+            "averageSkillLevel": 6.38,
+            "averageSpecializeLevel": [
+                0.1,
+                1.55,
+                0.24
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.03,
+                "2": 1.08
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_130_doberm",
+            "averageEvolvePhase": 0,
+            "averageLevel": 24,
+            "averageCalculatedLevel": 24.8635477582846,
+            "averageSkillLevel": 1.7,
+            "averageSpecializeLevel": [
+                0.03,
+                0.04
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 290,
+            "characterId": "char_4072_ironmn",
+            "averageEvolvePhase": 2,
+            "averageLevel": 21,
+            "averageCalculatedLevel": 151.87586206896552,
+            "averageSkillLevel": 5.86,
+            "averageSpecializeLevel": [
+                0.77,
+                0.58,
+                1.08
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.09
+            }
+        },
+        {
+            "sampleCount": 395,
+            "characterId": "char_1033_swire2",
+            "averageEvolvePhase": 1,
+            "averageLevel": 47,
+            "averageCalculatedLevel": 97.9873417721519,
+            "averageSkillLevel": 3.96,
+            "averageSpecializeLevel": [
+                0.12,
+                0.46,
+                0.44
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.09
+            }
+        },
+        {
+            "sampleCount": 489,
+            "characterId": "char_129_bluep",
+            "averageEvolvePhase": 2,
+            "averageLevel": 7,
+            "averageCalculatedLevel": 127.9079754601227,
+            "averageSkillLevel": 5.71,
+            "averageSpecializeLevel": [
+                1,
+                0.26
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.11
+            }
+        },
+        {
+            "sampleCount": 497,
+            "characterId": "char_218_cuttle",
+            "averageEvolvePhase": 1,
+            "averageLevel": 8,
+            "averageCalculatedLevel": 58.67404426559356,
+            "averageSkillLevel": 2.89,
+            "averageSpecializeLevel": [
+                0.12,
+                0.34
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.26
+            }
+        },
+        {
+            "sampleCount": 505,
+            "characterId": "char_4077_palico",
+            "averageEvolvePhase": 2,
+            "averageLevel": 26,
+            "averageCalculatedLevel": 26.20990099009901,
+            "averageSkillLevel": 1,
+            "averageSpecializeLevel": [],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 503,
+            "characterId": "char_265_sophia",
+            "averageEvolvePhase": 0,
+            "averageLevel": 25,
+            "averageCalculatedLevel": 25.90854870775348,
+            "averageSkillLevel": 1.88,
+            "averageSpecializeLevel": [
+                0.05,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 331,
+            "characterId": "char_430_fartth",
+            "averageEvolvePhase": 2,
+            "averageLevel": 22,
+            "averageCalculatedLevel": 152.17522658610272,
+            "averageSkillLevel": 5.69,
+            "averageSpecializeLevel": [
+                0.06,
+                0.18,
+                1.37
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.07,
+                "2": 1.02
+            }
+        },
+        {
+            "sampleCount": 419,
+            "characterId": "char_1013_chen2",
+            "averageEvolvePhase": 2,
+            "averageLevel": 84,
+            "averageCalculatedLevel": 214.3436754176611,
+            "averageSkillLevel": 7,
+            "averageSpecializeLevel": [
+                0.55,
+                0.22,
+                2.96
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 512,
+            "characterId": "char_484_robrta",
+            "averageEvolvePhase": 0,
+            "averageLevel": 28,
+            "averageCalculatedLevel": 28.580078125,
+            "averageSkillLevel": 2.05,
+            "averageSpecializeLevel": [
+                0.04,
+                0.07
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 463,
+            "characterId": "char_4063_quartz",
+            "averageEvolvePhase": 0,
+            "averageLevel": 18,
+            "averageCalculatedLevel": 18.736501079913605,
+            "averageSkillLevel": 1.55,
+            "averageSpecializeLevel": [
+                0.03,
+                0.05
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 392,
+            "characterId": "char_4083_chimes",
+            "averageEvolvePhase": 0,
+            "averageLevel": 13,
+            "averageCalculatedLevel": 13.28826530612245,
+            "averageSkillLevel": 1.37,
+            "averageSpecializeLevel": [
+                0.03,
+                0.03
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_278_orchid",
+            "averageEvolvePhase": 2,
+            "averageLevel": 48,
+            "averageCalculatedLevel": 88.30799220272904,
+            "averageSkillLevel": 6.19,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 505,
+            "characterId": "char_304_zebra",
+            "averageEvolvePhase": 0,
+            "averageLevel": 47,
+            "averageCalculatedLevel": 47.603960396039604,
+            "averageSkillLevel": 3.03,
+            "averageSpecializeLevel": [
+                0.07,
+                0.19
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 464,
+            "characterId": "char_478_kirara",
+            "averageEvolvePhase": 0,
+            "averageLevel": 34,
+            "averageCalculatedLevel": 34.452586206896555,
+            "averageSkillLevel": 2,
+            "averageSpecializeLevel": [
+                0.05,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_149_scave",
+            "averageEvolvePhase": 1,
+            "averageLevel": 2,
+            "averageCalculatedLevel": 47.85964912280702,
+            "averageSkillLevel": 2.87,
+            "averageSpecializeLevel": [
+                0.04,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 328,
+            "characterId": "char_4082_qiubai",
+            "averageEvolvePhase": 2,
+            "averageLevel": 59,
+            "averageCalculatedLevel": 189.52439024390245,
+            "averageSkillLevel": 6.69,
+            "averageSpecializeLevel": [
+                0.54,
+                0.67,
+                2.53
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 472,
+            "characterId": "char_195_glassb",
+            "averageEvolvePhase": 1,
+            "averageLevel": 0,
+            "averageCalculatedLevel": 50.559322033898304,
+            "averageSkillLevel": 2.78,
+            "averageSpecializeLevel": [
+                0.05,
+                0.04
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 314,
+            "characterId": "char_456_ash",
+            "averageEvolvePhase": 2,
+            "averageLevel": 73,
+            "averageCalculatedLevel": 203.843949044586,
+            "averageSkillLevel": 6.95,
+            "averageSpecializeLevel": [
+                0.27,
+                2.75,
+                0.39
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.11
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_281_popka",
+            "averageEvolvePhase": 2,
+            "averageLevel": 38,
+            "averageCalculatedLevel": 78.05847953216374,
+            "averageSkillLevel": 5.2,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_002_amiya",
+            "averageEvolvePhase": 2,
+            "averageLevel": 54,
+            "averageCalculatedLevel": 174.05653021442495,
+            "averageSkillLevel": 6.96,
+            "averageSpecializeLevel": [
+                0.17,
+                0.23,
+                0.54
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.09
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_009_12fce",
+            "averageEvolvePhase": 2,
+            "averageLevel": 28,
+            "averageCalculatedLevel": 28.21832358674464,
+            "averageSkillLevel": 1,
+            "averageSpecializeLevel": [],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 481,
+            "characterId": "char_378_asbest",
+            "averageEvolvePhase": 0,
+            "averageLevel": 25,
+            "averageCalculatedLevel": 25.255717255717254,
+            "averageSkillLevel": 1.87,
+            "averageSpecializeLevel": [
+                0.05,
+                0.05
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 450,
+            "characterId": "char_4032_provs",
+            "averageEvolvePhase": 1,
+            "averageLevel": 18,
+            "averageCalculatedLevel": 68.83111111111111,
+            "averageSkillLevel": 2.38,
+            "averageSpecializeLevel": [
+                0.03,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 504,
+            "characterId": "char_421_crow",
+            "averageEvolvePhase": 2,
+            "averageLevel": 22,
+            "averageCalculatedLevel": 142.50396825396825,
+            "averageSkillLevel": 5.85,
+            "averageSpecializeLevel": [
+                1.29,
+                0.82
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.08
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_347_jaksel",
+            "averageEvolvePhase": 0,
+            "averageLevel": 14,
+            "averageCalculatedLevel": 14.510721247563353,
+            "averageSkillLevel": 1.48,
+            "averageSpecializeLevel": [
+                0.02,
+                0.04
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_173_slchan",
+            "averageEvolvePhase": 1,
+            "averageLevel": 38,
+            "averageCalculatedLevel": 88.80116959064327,
+            "averageSkillLevel": 5.31,
+            "averageSpecializeLevel": [
+                0.08,
+                0.61
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.03
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_4041_chnut",
+            "averageEvolvePhase": 0,
+            "averageLevel": 29,
+            "averageCalculatedLevel": 29.719298245614034,
+            "averageSkillLevel": 2.1,
+            "averageSpecializeLevel": [
+                0.06,
+                0.04
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_302_glaze",
+            "averageEvolvePhase": 1,
+            "averageLevel": 6,
+            "averageCalculatedLevel": 51.30214424951267,
+            "averageSkillLevel": 3.06,
+            "averageSpecializeLevel": [
+                0.05,
+                0.31
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.06
+            }
+        },
+        {
+            "sampleCount": 493,
+            "characterId": "char_155_tiger",
+            "averageEvolvePhase": 0,
+            "averageLevel": 36,
+            "averageCalculatedLevel": 36.72008113590264,
+            "averageSkillLevel": 2.38,
+            "averageSpecializeLevel": [
+                0.03,
+                0.08
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_440_pinecn",
+            "averageEvolvePhase": 1,
+            "averageLevel": 8,
+            "averageCalculatedLevel": 53.865497076023395,
+            "averageSkillLevel": 3.4,
+            "averageSpecializeLevel": [
+                0.22,
+                0.05
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 464,
+            "characterId": "char_179_cgbird",
+            "averageEvolvePhase": 2,
+            "averageLevel": 73,
+            "averageCalculatedLevel": 203.58189655172413,
+            "averageSkillLevel": 6.94,
+            "averageSpecializeLevel": [
+                0.06,
+                1.37,
+                2.44
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.28
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_4062_totter",
+            "averageEvolvePhase": 0,
+            "averageLevel": 24,
+            "averageCalculatedLevel": 24.625730994152047,
+            "averageSkillLevel": 1.74,
+            "averageSpecializeLevel": [
+                0.07,
+                0.1
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.04
+            }
+        },
+        {
+            "sampleCount": 356,
+            "characterId": "char_457_blitz",
+            "averageEvolvePhase": 0,
+            "averageLevel": 35,
+            "averageCalculatedLevel": 35.438202247191015,
+            "averageSkillLevel": 2.19,
+            "averageSpecializeLevel": [
+                0.12,
+                0.09
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_123_fang",
+            "averageEvolvePhase": 2,
+            "averageLevel": 50,
+            "averageCalculatedLevel": 90.29629629629629,
+            "averageSkillLevel": 6.36,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_141_nights",
+            "averageEvolvePhase": 0,
+            "averageLevel": 35,
+            "averageCalculatedLevel": 35.732943469785575,
+            "averageSkillLevel": 2.33,
+            "averageSpecializeLevel": [
+                0.02,
+                0.03
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 477,
+            "characterId": "char_274_astesi",
+            "averageEvolvePhase": 1,
+            "averageLevel": 40,
+            "averageCalculatedLevel": 90.08595387840671,
+            "averageSkillLevel": 4.31,
+            "averageSpecializeLevel": [
+                0.07,
+                0.28
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_181_flower",
+            "averageEvolvePhase": 2,
+            "averageLevel": 0,
+            "averageCalculatedLevel": 105.75048732943469,
+            "averageSkillLevel": 5.27,
+            "averageSpecializeLevel": [
+                0.1,
+                0.22
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.35
+            }
+        },
+        {
+            "sampleCount": 475,
+            "characterId": "char_261_sddrag",
+            "averageEvolvePhase": 0,
+            "averageLevel": 47,
+            "averageCalculatedLevel": 47.76842105263158,
+            "averageSkillLevel": 2.63,
+            "averageSpecializeLevel": [
+                0.04,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_120_hibisc",
+            "averageEvolvePhase": 2,
+            "averageLevel": 32,
+            "averageCalculatedLevel": 72.0916179337232,
+            "averageSkillLevel": 4.85,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 480,
+            "characterId": "char_294_ayer",
+            "averageEvolvePhase": 0,
+            "averageLevel": 26,
+            "averageCalculatedLevel": 26.49375,
+            "averageSkillLevel": 1.91,
+            "averageSpecializeLevel": [
+                0.07,
+                0.07
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_199_yak",
+            "averageEvolvePhase": 1,
+            "averageLevel": 7,
+            "averageCalculatedLevel": 52.33918128654971,
+            "averageSkillLevel": 3.04,
+            "averageSpecializeLevel": [
+                0.04,
+                0.08
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 474,
+            "characterId": "char_293_thorns",
+            "averageEvolvePhase": 2,
+            "averageLevel": 78,
+            "averageCalculatedLevel": 208.48945147679325,
+            "averageSkillLevel": 6.92,
+            "averageSpecializeLevel": [
+                0.08,
+                0.12,
+                2.91
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_150_snakek",
+            "averageEvolvePhase": 2,
+            "averageLevel": 3,
+            "averageCalculatedLevel": 108.06237816764133,
+            "averageSkillLevel": 5.84,
+            "averageSpecializeLevel": [
+                0.04,
+                0.37
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.19
+            }
+        },
+        {
+            "sampleCount": 487,
+            "characterId": "char_475_akafyu",
+            "averageEvolvePhase": 0,
+            "averageLevel": 27,
+            "averageCalculatedLevel": 27.8911704312115,
+            "averageSkillLevel": 1.99,
+            "averageSpecializeLevel": [
+                0.05,
+                0.09
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 501,
+            "characterId": "char_108_silent",
+            "averageEvolvePhase": 1,
+            "averageLevel": 56,
+            "averageCalculatedLevel": 106.65269461077844,
+            "averageSkillLevel": 5.29,
+            "averageSpecializeLevel": [
+                0.03,
+                0.26
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.04
+            }
+        },
+        {
+            "sampleCount": 509,
+            "characterId": "char_127_estell",
+            "averageEvolvePhase": 0,
+            "averageLevel": 25,
+            "averageCalculatedLevel": 25.294695481335953,
+            "averageSkillLevel": 1.97,
+            "averageSpecializeLevel": [
+                0.02,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 451,
+            "characterId": "char_1016_agoat2",
+            "averageEvolvePhase": 2,
+            "averageLevel": 57,
+            "averageCalculatedLevel": 187.47893569844788,
+            "averageSkillLevel": 6.64,
+            "averageSpecializeLevel": [
+                2.14,
+                0.84,
+                1.82
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 417,
+            "characterId": "char_297_hamoni",
+            "averageEvolvePhase": 0,
+            "averageLevel": 19,
+            "averageCalculatedLevel": 19.976019184652277,
+            "averageSkillLevel": 1.53,
+            "averageSpecializeLevel": [
+                0.04,
+                0.07
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 418,
+            "characterId": "char_1012_skadi2",
+            "averageEvolvePhase": 2,
+            "averageLevel": 83,
+            "averageCalculatedLevel": 213.78708133971293,
+            "averageSkillLevel": 7,
+            "averageSpecializeLevel": [
+                1.06,
+                2.98,
+                2.32
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 508,
+            "characterId": "char_220_grani",
+            "averageEvolvePhase": 0,
+            "averageLevel": 40,
+            "averageCalculatedLevel": 40.31299212598425,
+            "averageSkillLevel": 2.27,
+            "averageSpecializeLevel": [
+                0.04,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 498,
+            "characterId": "char_488_buildr",
+            "averageEvolvePhase": 0,
+            "averageLevel": 19,
+            "averageCalculatedLevel": 19.93574297188755,
+            "averageSkillLevel": 1.63,
+            "averageSpecializeLevel": [
+                0.04,
+                0.11
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 310,
+            "characterId": "char_2014_nian",
+            "averageEvolvePhase": 2,
+            "averageLevel": 70,
+            "averageCalculatedLevel": 200.31612903225806,
+            "averageSkillLevel": 6.88,
+            "averageSpecializeLevel": [
+                0.17,
+                1.75,
+                1.05
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.96,
+                "2": 1.05
+            }
+        },
+        {
+            "sampleCount": 488,
+            "characterId": "char_174_slbell",
+            "averageEvolvePhase": 1,
+            "averageLevel": 31,
+            "averageCalculatedLevel": 81.38729508196721,
+            "averageSkillLevel": 4.2,
+            "averageSpecializeLevel": [
+                0.04,
+                0.49
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 470,
+            "characterId": "char_136_hsguma",
+            "averageEvolvePhase": 2,
+            "averageLevel": 68,
+            "averageCalculatedLevel": 198.79787234042553,
+            "averageSkillLevel": 6.81,
+            "averageSpecializeLevel": [
+                0.08,
+                2.22,
+                0.64
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.42,
+                "2": 1.59
+            }
+        },
+        {
+            "sampleCount": 504,
+            "characterId": "char_451_robin",
+            "averageEvolvePhase": 0,
+            "averageLevel": 30,
+            "averageCalculatedLevel": 30.6984126984127,
+            "averageSkillLevel": 2.38,
+            "averageSpecializeLevel": [
+                0.09,
+                0.11
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 481,
+            "characterId": "char_326_glacus",
+            "averageEvolvePhase": 0,
+            "averageLevel": 40,
+            "averageCalculatedLevel": 40.237006237006234,
+            "averageSkillLevel": 2.52,
+            "averageSpecializeLevel": [
+                0.04,
+                0.08
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 458,
+            "characterId": "char_010_chen",
+            "averageEvolvePhase": 2,
+            "averageLevel": 52,
+            "averageCalculatedLevel": 182.8296943231441,
+            "averageSkillLevel": 6.55,
+            "averageSpecializeLevel": [
+                0.18,
+                2.17,
+                1.31
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.64
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_258_podego",
+            "averageEvolvePhase": 1,
+            "averageLevel": 2,
+            "averageCalculatedLevel": 47.45029239766082,
+            "averageSkillLevel": 3.13,
+            "averageSpecializeLevel": [
+                0.1,
+                0.13
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 334,
+            "characterId": "char_4046_ebnhlz",
+            "averageEvolvePhase": 2,
+            "averageLevel": 32,
+            "averageCalculatedLevel": 162.5748502994012,
+            "averageSkillLevel": 5.95,
+            "averageSpecializeLevel": [
+                0.1,
+                0.53,
+                1.22
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.17,
+                "2": 1.07
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_137_brownb",
+            "averageEvolvePhase": 0,
+            "averageLevel": 19,
+            "averageCalculatedLevel": 19.908382066276804,
+            "averageSkillLevel": 1.73,
+            "averageSpecializeLevel": [
+                0.04,
+                0.04
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 511,
+            "characterId": "char_230_savage",
+            "averageEvolvePhase": 0,
+            "averageLevel": 36,
+            "averageCalculatedLevel": 36.31506849315068,
+            "averageSkillLevel": 2.01,
+            "averageSpecializeLevel": [
+                0.04,
+                0.04
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 501,
+            "characterId": "char_405_absin",
+            "averageEvolvePhase": 0,
+            "averageLevel": 23,
+            "averageCalculatedLevel": 23.0499001996008,
+            "averageSkillLevel": 1.71,
+            "averageSpecializeLevel": [
+                0.03,
+                0.04
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 483,
+            "characterId": "char_350_surtr",
+            "averageEvolvePhase": 2,
+            "averageLevel": 83,
+            "averageCalculatedLevel": 213.95238095238096,
+            "averageSkillLevel": 6.99,
+            "averageSpecializeLevel": [
+                0.23,
+                0.45,
+                2.99
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 477,
+            "characterId": "char_103_angel",
+            "averageEvolvePhase": 2,
+            "averageLevel": 79,
+            "averageCalculatedLevel": 209.44025157232704,
+            "averageSkillLevel": 6.98,
+            "averageSpecializeLevel": [
+                0.22,
+                0.27,
+                2.82
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.92
+            }
+        },
+        {
+            "sampleCount": 448,
+            "characterId": "char_402_tuye",
+            "averageEvolvePhase": 0,
+            "averageLevel": 36,
+            "averageCalculatedLevel": 36.97767857142857,
+            "averageSkillLevel": 2.13,
+            "averageSpecializeLevel": [
+                0.03,
+                0.05
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 505,
+            "characterId": "char_144_red",
+            "averageEvolvePhase": 2,
+            "averageLevel": 10,
+            "averageCalculatedLevel": 130.3940594059406,
+            "averageSkillLevel": 6.12,
+            "averageSpecializeLevel": [
+                0.35,
+                0.53
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.15
+            }
+        },
+        {
+            "sampleCount": 473,
+            "characterId": "char_358_lisa",
+            "averageEvolvePhase": 2,
+            "averageLevel": 67,
+            "averageCalculatedLevel": 197.0169133192389,
+            "averageSkillLevel": 6.94,
+            "averageSpecializeLevel": [
+                0.08,
+                1.62,
+                2.66
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.27
+            }
+        },
+        {
+            "sampleCount": 438,
+            "characterId": "char_4102_threye",
+            "averageEvolvePhase": 0,
+            "averageLevel": 31,
+            "averageCalculatedLevel": 31.78538812785388,
+            "averageSkillLevel": 2.15,
+            "averageSpecializeLevel": [
+                0.05,
+                0.09
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 506,
+            "characterId": "char_131_flameb",
+            "averageEvolvePhase": 0,
+            "averageLevel": 23,
+            "averageCalculatedLevel": 23.389328063241106,
+            "averageSkillLevel": 1.84,
+            "averageSpecializeLevel": [
+                0.05,
+                0.05
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 492,
+            "characterId": "char_4093_frston",
+            "averageEvolvePhase": 2,
+            "averageLevel": 26,
+            "averageCalculatedLevel": 26.227642276422763,
+            "averageSkillLevel": 1,
+            "averageSpecializeLevel": [],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 486,
+            "characterId": "char_343_tknogi",
+            "averageEvolvePhase": 0,
+            "averageLevel": 21,
+            "averageCalculatedLevel": 21.207818930041153,
+            "averageSkillLevel": 1.76,
+            "averageSpecializeLevel": [
+                0.06,
+                0.05
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 406,
+            "characterId": "char_4080_lin",
+            "averageEvolvePhase": 2,
+            "averageLevel": 33,
+            "averageCalculatedLevel": 163.5,
+            "averageSkillLevel": 6.01,
+            "averageSpecializeLevel": [
+                0.4,
+                0.29,
+                1.51
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.52
+            }
+        },
+        {
+            "sampleCount": 497,
+            "characterId": "char_202_demkni",
+            "averageEvolvePhase": 2,
+            "averageLevel": 78,
+            "averageCalculatedLevel": 208.93360160965796,
+            "averageSkillLevel": 7,
+            "averageSpecializeLevel": [
+                2.83,
+                2.26,
+                2.37
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.92,
+                "2": 1.24
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_277_sqrrel",
+            "averageEvolvePhase": 1,
+            "averageLevel": 39,
+            "averageCalculatedLevel": 84.06432748538012,
+            "averageSkillLevel": 6.36,
+            "averageSpecializeLevel": [
+                0.21,
+                0.08
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 445,
+            "characterId": "char_250_phatom",
+            "averageEvolvePhase": 2,
+            "averageLevel": 47,
+            "averageCalculatedLevel": 177.64719101123595,
+            "averageSkillLevel": 6.52,
+            "averageSpecializeLevel": [
+                0.14,
+                1.59,
+                1.34
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.21,
+                "2": 1.01
+            }
+        },
+        {
+            "sampleCount": 442,
+            "characterId": "char_213_mostma",
+            "averageEvolvePhase": 2,
+            "averageLevel": 43,
+            "averageCalculatedLevel": 173.33484162895928,
+            "averageSkillLevel": 6.33,
+            "averageSpecializeLevel": [
+                0.08,
+                0.61,
+                1.86
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 2.19
+            }
+        },
+        {
+            "sampleCount": 512,
+            "characterId": "char_260_durnar",
+            "averageEvolvePhase": 0,
+            "averageLevel": 29,
+            "averageCalculatedLevel": 29.34375,
+            "averageSkillLevel": 1.96,
+            "averageSpecializeLevel": [
+                0.03,
+                0.04
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_283_midn",
+            "averageEvolvePhase": 2,
+            "averageLevel": 36,
+            "averageCalculatedLevel": 76.47953216374269,
+            "averageSkillLevel": 5.54,
+            "averageSpecializeLevel": [
+                0
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 492,
+            "characterId": "char_254_vodfox",
+            "averageEvolvePhase": 2,
+            "averageLevel": 12,
+            "averageCalculatedLevel": 132.79674796747966,
+            "averageSkillLevel": 6.07,
+            "averageSpecializeLevel": [
+                0.04,
+                1.86
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 494,
+            "characterId": "char_4045_heidi",
+            "averageEvolvePhase": 0,
+            "averageLevel": 32,
+            "averageCalculatedLevel": 32.520242914979754,
+            "averageSkillLevel": 2.16,
+            "averageSpecializeLevel": [
+                0.07,
+                0.06
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 481,
+            "characterId": "char_134_ifrit",
+            "averageEvolvePhase": 2,
+            "averageLevel": 70,
+            "averageCalculatedLevel": 200.58627858627858,
+            "averageSkillLevel": 6.9,
+            "averageSpecializeLevel": [
+                0.07,
+                2.52,
+                1.69
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.22
+            }
+        },
+        {
+            "sampleCount": 472,
+            "characterId": "char_311_mudrok",
+            "averageEvolvePhase": 2,
+            "averageLevel": 79,
+            "averageCalculatedLevel": 209.64406779661016,
+            "averageSkillLevel": 6.99,
+            "averageSpecializeLevel": [
+                0.09,
+                2.84,
+                1.84
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 413,
+            "characterId": "char_377_gdglow",
+            "averageEvolvePhase": 2,
+            "averageLevel": 77,
+            "averageCalculatedLevel": 207.69249394673125,
+            "averageSkillLevel": 6.96,
+            "averageSpecializeLevel": [
+                0.34,
+                2.26,
+                2.8
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 436,
+            "characterId": "char_1028_texas2",
+            "averageEvolvePhase": 2,
+            "averageLevel": 82,
+            "averageCalculatedLevel": 212.0940366972477,
+            "averageSkillLevel": 6.99,
+            "averageSpecializeLevel": [
+                0.44,
+                2.8,
+                2.87
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 2.29
+            }
+        },
+        {
+            "sampleCount": 462,
+            "characterId": "char_249_mlyss",
+            "averageEvolvePhase": 2,
+            "averageLevel": 55,
+            "averageCalculatedLevel": 185.27056277056278,
+            "averageSkillLevel": 6.67,
+            "averageSpecializeLevel": [
+                0.18,
+                1.45,
+                1.79
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_328_cammou",
+            "averageEvolvePhase": 1,
+            "averageLevel": 9,
+            "averageCalculatedLevel": 54.0682261208577,
+            "averageSkillLevel": 3.31,
+            "averageSpecializeLevel": [
+                0.03,
+                0.15
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 506,
+            "characterId": "char_497_ctable",
+            "averageEvolvePhase": 2,
+            "averageLevel": 19,
+            "averageCalculatedLevel": 139.97035573122528,
+            "averageSkillLevel": 6.12,
+            "averageSpecializeLevel": [
+                1.1,
+                1.1
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_183_skgoat",
+            "averageEvolvePhase": 0,
+            "averageLevel": 35,
+            "averageCalculatedLevel": 35.226120857699804,
+            "averageSkillLevel": 2.02,
+            "averageSpecializeLevel": [
+                0.03,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.01
+            }
+        },
+        {
+            "sampleCount": 498,
+            "characterId": "char_369_bena",
+            "averageEvolvePhase": 0,
+            "averageLevel": 32,
+            "averageCalculatedLevel": 32.69277108433735,
+            "averageSkillLevel": 2.13,
+            "averageSpecializeLevel": [
+                0.06,
+                0.08
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 439,
+            "characterId": "char_1024_hbisc2",
+            "averageEvolvePhase": 0,
+            "averageLevel": 40,
+            "averageCalculatedLevel": 40.945330296127565,
+            "averageSkillLevel": 2.23,
+            "averageSpecializeLevel": [
+                0.03,
+                0.07
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 441,
+            "characterId": "char_017_huang",
+            "averageEvolvePhase": 2,
+            "averageLevel": 77,
+            "averageCalculatedLevel": 207.14739229024943,
+            "averageSkillLevel": 6.93,
+            "averageSpecializeLevel": [
+                0.1,
+                2.88,
+                0.26
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.76
+            }
+        },
+        {
+            "sampleCount": 482,
+            "characterId": "char_101_sora",
+            "averageEvolvePhase": 1,
+            "averageLevel": 17,
+            "averageCalculatedLevel": 67.09958506224066,
+            "averageSkillLevel": 3.63,
+            "averageSpecializeLevel": [
+                0.1,
+                0.23
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 402,
+            "characterId": "char_332_archet",
+            "averageEvolvePhase": 2,
+            "averageLevel": 46,
+            "averageCalculatedLevel": 176.67910447761193,
+            "averageSkillLevel": 6.53,
+            "averageSpecializeLevel": [
+                0.67,
+                0.89,
+                1.41
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.11,
+                "2": 1.07
+            }
+        },
+        {
+            "sampleCount": 489,
+            "characterId": "char_204_platnm",
+            "averageEvolvePhase": 1,
+            "averageLevel": 64,
+            "averageCalculatedLevel": 114.03885480572598,
+            "averageSkillLevel": 5.23,
+            "averageSpecializeLevel": [
+                0.05,
+                0.66
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.07
+            }
+        },
+        {
+            "sampleCount": 486,
+            "characterId": "char_279_excu",
+            "averageEvolvePhase": 1,
+            "averageLevel": 1,
+            "averageCalculatedLevel": 51.95061728395062,
+            "averageSkillLevel": 2.92,
+            "averageSpecializeLevel": [
+                0.07,
+                0.09
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 469,
+            "characterId": "char_264_f12yin",
+            "averageEvolvePhase": 2,
+            "averageLevel": 74,
+            "averageCalculatedLevel": 204.95735607675905,
+            "averageSkillLevel": 6.91,
+            "averageSpecializeLevel": [
+                0.1,
+                2.84,
+                0.86
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 507,
+            "characterId": "char_388_mint",
+            "averageEvolvePhase": 0,
+            "averageLevel": 34,
+            "averageCalculatedLevel": 34.532544378698226,
+            "averageSkillLevel": 2.21,
+            "averageSpecializeLevel": [
+                0.04,
+                0.09
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.02
+            }
+        },
+        {
+            "sampleCount": 513,
+            "characterId": "char_366_acdrop",
+            "averageEvolvePhase": 0,
+            "averageLevel": 15,
+            "averageCalculatedLevel": 15.116959064327485,
+            "averageSkillLevel": 1.44,
+            "averageSpecializeLevel": [
+                0.02,
+                0.03
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1
+            }
+        },
+        {
+            "sampleCount": 511,
+            "characterId": "char_474_glady",
+            "averageEvolvePhase": 2,
+            "averageLevel": 37,
+            "averageCalculatedLevel": 167.43835616438355,
+            "averageSkillLevel": 6.39,
+            "averageSpecializeLevel": [
+                1.26,
+                0.95,
+                1.19
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.75
+            }
+        },
+        {
+            "sampleCount": 494,
+            "characterId": "char_159_peacok",
+            "averageEvolvePhase": 1,
+            "averageLevel": 3,
+            "averageCalculatedLevel": 48.01417004048583,
+            "averageSkillLevel": 2.69,
+            "averageSpecializeLevel": [
+                0.15,
+                0.06
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.03
+            }
+        },
+        {
+            "sampleCount": 471,
+            "characterId": "char_346_aosta",
+            "averageEvolvePhase": 0,
+            "averageLevel": 19,
+            "averageCalculatedLevel": 19.333333333333332,
+            "averageSkillLevel": 1.66,
+            "averageSpecializeLevel": [
+                0.04,
+                0.06
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 479,
+            "characterId": "char_4067_lolxh",
+            "averageEvolvePhase": 1,
+            "averageLevel": 18,
+            "averageCalculatedLevel": 63.22129436325678,
+            "averageSkillLevel": 3.51,
+            "averageSpecializeLevel": [
+                0.25,
+                0.21
+            ],
+            "averageEquipLevel": {}
+        },
+        {
+            "sampleCount": 473,
+            "characterId": "char_214_kafka",
+            "averageEvolvePhase": 1,
+            "averageLevel": 23,
+            "averageCalculatedLevel": 73.34883720930233,
+            "averageSkillLevel": 3.99,
+            "averageSpecializeLevel": [
+                0.23,
+                0.09
+            ],
+            "averageEquipLevel": {
+                "0": 1,
+                "1": 1.04
+            }
+        }
+    ]
+}
