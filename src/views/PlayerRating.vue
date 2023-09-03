@@ -22,7 +22,7 @@
         </tr>
       </table>
       <p class="total-score">总分为：<strong>{{ Math.round(doctorScore.scoreTotal) }}</strong></p>
-      <p class="note">补正用平均练度数据更新于：{{ updateTime }}</p>
+      <p class="note">补正用平均练度数据更新于：{{ updateTime }} &nbsp;规则更新于：2023-09-04T03:00</p>
       <p class="warning">该分数仅供娱乐，请不要用这个分数来评判博士呦~~</p>
     </div>
 
@@ -30,6 +30,7 @@
       下一步干员养成建议，仅列出当前练度低于平均水平的干员，仅供参考哦。<p/>
       <span >（如果你觉得这里面的养成建议没啥用，那大概是你的练度已经很高了，或者该练的干员都已经练了。）</span>
       <p/>
+      <li v-if="suggestions.length==0">给大佬跪了，大佬您想练什么就练什么吧。</li>
       <ul>
         <li v-for="suggestion in suggestions">{{ suggestion }}</li>
       </ul>
@@ -102,9 +103,10 @@
       然后，根据最新统计的玩家练度数据（首页有展示），计算每项分数的补正如下：
     </p>
     <ol>
-      <li>如果该项目的平均得分为X，而你的得分为Y，则补正为：2*Y-X</li>
+      <li>如果该项目的平均得分为X，而你的得分为Y，则补正为：X+(X-Y)/2</li>
       <li>比如玛恩纳的平均等级分为220分（平均精二满级），而你的练度为190分（精二60级）</li>
-      <li>则你的分数为 2 * 190 - 220 = 160</li>
+      <li>则你的分数为 190 + (190-220)/2 = 175</li>
+      <li>任何单项的分数不会低于0分</li>
     </ol>
     <p>
       基础得分代表了养成投入的资源。
@@ -113,7 +115,7 @@
       而补正得分则是对你的惩罚和奖励。
     </p>
     <p>
-      如果大家都练你不练，则你的分数会低于练度应得的基础分，如果差太多甚至会扣分。反之，如果大家都不练但是你练了，那么会加奖励分，差距越大，加的越多。
+      如果大家都练你不练，则你的分数会低于练度应得的基础分。反之如果大家都不练但是你练了，那么会加奖励分。
     </p>
     <h2>关于练度推荐</h2>    
     <p>
@@ -288,6 +290,7 @@ export default {
       character.skills.forEach((skill: any, index: number) => {
         const averageSpecializeLevel = averageData.averageSpecializeLevel[index];
         const specializeScore = (2 * skill.specializeLevel - averageSpecializeLevel) * 30;
+
         scoreDict.specialize += skill.specializeLevel * 30;
         scoreDict.specializeAveraged += specializeScore;
 
@@ -318,13 +321,30 @@ export default {
       });
 
       scoreDict.total = scoreDict.level + scoreDict.specialize + scoreDict.equip;
+
+      if(scoreDict.specializeAveraged<0){
+        scoreDict.specializeAveraged=0;
+      }
+
+      if(scoreDict.equipAveraged<0){
+        scoreDict.equipAveraged=0;
+      }
+      
+      if(scoreDict.levelAveraged<0){
+        scoreDict.levelAveraged=0;
+      }
+
       scoreDict.totalAveraged = scoreDict.levelAveraged + scoreDict.specializeAveraged + scoreDict.equipAveraged;
 
       //let potentialSuggestion = `averageCalculatedLevel=${averageCalculatedLevel} averageData.averageEvolvePhase=${averageData.averageEvolvePhase} scoreDict.level=${scoreDict.level} character.level=${character.level} averageData.averageLevel=${averageData.averageLevel} minEquiptLevel=${minEquiptLevel}`
       let potentialSuggestion =""
 
       if (character.evolvePhase < averageData.averageEvolvePhase) {
-        scoreDict.potential = (averageCalculatedLevel - scoreDict.level) * 2;
+        if(averageData.averageEvolvePhase<2&&charMapData.rarity>2){
+          scoreDict.potential = 0;
+        }else{
+          scoreDict.potential = (averageCalculatedLevel - scoreDict.level) * 2;
+        }
 
         potentialSuggestion += `提升${charMapData.name}干员到精英化${averageData.averageEvolvePhase}阶段，并建议升至${Math.ceil(averageData.averageLevel)}级`;
 
