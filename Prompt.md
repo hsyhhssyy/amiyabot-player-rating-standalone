@@ -78,3 +78,18 @@ const calcuate_single_char = (character: any, charMapData: any,averageData :any)
 如果你的某个干员的精英化等级落后于平均精英化等级，提升潜力=与平均等级分的差距*2 。这项的目的是首先推荐精英化等级落后的干员。
 如果你的干员的精英化等级高于平均精英化等级，则提升潜力=与平均等级分的差距+技能专精分差距最大的那个技能的技能专精分+模组分差距最大的那个模组的模组分。
 
+参考下面这个json
+{
+            "sampleCount": 462,
+            "characterId": "char_249_mlyss",
+            "averageEvolvePhase": 2,
+            "averageLevel": 55,
+            "averageCalculatedLevel": 185.27056277056278,
+            "averageSkillLevel": 6.67,
+            "averageSpecializeLevel": [
+                0.18,
+                1.45,
+                1.79
+            ],
+            "averageEquipLevel": {}
+        },
