@@ -1,5 +1,5 @@
 <template>
-    <div class="title">当前干员平均练度数据 样本总数:{{ batchCount }} 最后更新于:{{ updateTime }}</div>
+    <div class="title">当前干员平均练度数据 样本总数:{{ batchCount }} 最后更新于：{{ updateTime }}</div>
     <div class="card-list">
       <div v-for="card in cards" :key="card.id" class="card">
         <img :src="card.image" :alt="card.imageAlt" class="card-image"/>

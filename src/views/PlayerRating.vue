@@ -22,11 +22,14 @@
         </tr>
       </table>
       <p class="total-score">总分为：<strong>{{ Math.round(doctorScore.scoreTotal) }}</strong></p>
+      <p class="note">补正用平均练度数据更新于：{{ updateTime }}</p>
       <p class="warning">该分数仅供娱乐，请不要用这个分数来评判博士呦~~</p>
     </div>
 
     <div class="info-card">
-      下一步干员养成建议<span class="note">（如果你觉得这里面的养成建议没啥用，那大概是你的练度已经很高了。）</span>
+      下一步干员养成建议，仅列出当前练度低于平均水平的干员，仅供参考哦。<p/>
+      <span >（如果你觉得这里面的养成建议没啥用，那大概是你的练度已经很高了，或者该练的干员都已经练了。）</span>
+      <p/>
       <ul>
         <li v-for="suggestion in suggestions">{{ suggestion }}</li>
       </ul>
@@ -119,6 +122,7 @@
     <ol>
       <li>如果你的某个干员的精英化等级落后于平均精英化等级，提升潜力=与平均等级分的差距*2 。这项的目的是首先推荐精英化等级落后的干员。</li>
       <li>如果你的干员的精英化等级高于平均精英化等级，则提升潜力=与平均等级分的差距+技能专精分差距最大的那个技能的技能专精分+模组分差距最大的那个模组的模组分。</li>
+      <li>也就是说，如果你的某位干员的练度，高于大家的平均练度，那么这位干员就完全不会出现在列表里</li>
     </ol>
     <div class="github-link-container">
       <a href="https://github.com/hsyhhssyy/amiyabot-player-rating-standalone" target="_blank" rel="noopener noreferrer">
@@ -129,6 +133,8 @@
   </div>
       </div>
     </div>
+
+    <button @click="handleButtonClick">返回首页</button>
 
   </div>
 </template>
@@ -164,6 +170,7 @@ export default {
     const tokenValue = ref("");
     const scoreDetails = ref<ScoreDetail[]>([]);
     const suggestions = ref<String[]>([]);
+    const updateTime = ref(Date.now());
 
     const doctorScore = ref({
       name: "",
@@ -222,6 +229,12 @@ export default {
       return hashHex;
     };
 
+
+    const handleButtonClick = () => {
+              sessionStorage.removeItem('tokenValue')
+          router.push({ name: 'AquireToken' });
+        };
+
     const calcuate_single_char = (character: any, charMapData: any, averageData: any) => {
       let scoreDict = {
         total: 0,
@@ -237,19 +250,23 @@ export default {
       };
       let baseIncrease = 0;
       let evolveIncrease = 0;
+      let minEquiptLevel = 100;
 
       switch (charMapData.rarity) {
         case 5:
           baseIncrease = 50;
           evolveIncrease = 80;
+          minEquiptLevel = 60;
           break;
         case 4:
           baseIncrease = 50;
           evolveIncrease = 70;
+          minEquiptLevel = 50;
           break;
         case 3:
           baseIncrease = 45;
           evolveIncrease = 60;
+          minEquiptLevel = 40;
           break;
         case 2:
           baseIncrease = 40;
@@ -303,8 +320,7 @@ export default {
       scoreDict.total = scoreDict.level + scoreDict.specialize + scoreDict.equip;
       scoreDict.totalAveraged = scoreDict.levelAveraged + scoreDict.specializeAveraged + scoreDict.equipAveraged;
 
-      //let potentialSuggestion = `averageCalculatedLevel=${averageCalculatedLevel} scoreDict.level=${scoreDict.level} character.level=${character.level} averageData.level=${averageData.averageLevel}`
-
+      //let potentialSuggestion = `averageCalculatedLevel=${averageCalculatedLevel} averageData.averageEvolvePhase=${averageData.averageEvolvePhase} scoreDict.level=${scoreDict.level} character.level=${character.level} averageData.averageLevel=${averageData.averageLevel} minEquiptLevel=${minEquiptLevel}`
       let potentialSuggestion =""
 
       if (character.evolvePhase < averageData.averageEvolvePhase) {
@@ -322,11 +338,12 @@ export default {
 
       let hasEquip = character.equip && character.equip.length > 1;
 
-      if (maxSpecializeSkillIndex > 0) {
+      if (maxSpecializeSkillIndex > 0&& (averageData.averageEvolvePhase>=2||character.evolvePhase>=2)) {
         potentialSuggestion += `，专精${maxSpecializeSkillIndex+1}技能至专${Math.ceil(averageData.averageSpecializeLevel[maxSpecializeSkillIndex])}`;
       }
 
-      if (hasEquip && maxEquipIndex > 0) {
+      if (hasEquip && maxEquipIndex > 0 && (averageData.averageEvolvePhase>=2||character.evolvePhase>=2)
+      && (character.level >= minEquiptLevel || averageData.averageLevel >=minEquiptLevel)) {
         potentialSuggestion += `，开启${maxEquipIndex}模组至${Math.ceil(averageData.averageEquipLevel[maxEquipIndex])}级`;
       }
 
@@ -372,6 +389,7 @@ export default {
 
         response = await axios.get("/latest_character_statistic.json");
         const characterStatisticsData: any = response.data.data; // 根据你的数据结构进行调整
+        updateTime.value = response.data.versionEnd
 
         let totalScores = 0;
         let totalLevelScores = 0;
@@ -417,7 +435,6 @@ export default {
         const topFiveSuggestions = topFivePotentials.map(dict => dict.potentialSuggestion);
 
         suggestions.value = topFiveSuggestions;
-
 
         loading.value = false
 
@@ -471,6 +488,8 @@ export default {
       scoreDetails,
       toggleText,
       toggleRule,
+      handleButtonClick,
+      updateTime,
       suggestions
     };
   }
@@ -594,5 +613,20 @@ p, li {
   height: 24px;
   margin-right: 10px;
 }
+
+button {
+  align-self: start;
+  padding: 6px 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
 </style>
   
