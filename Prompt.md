@@ -13,3 +13,30 @@
 
 还有其他方案吗？最好不要机械的划分热门和冷门，而是给出一个因子来平滑的影响优先级
 
+文件 "/home/hsyhhssyy/amiya-bot/vue-project/amiyabot-player-rating-standalone/src/algorithms/calcuate_character_score.ts" 不在项目 "/home/hsyhhssyy/amiya-bot/vue-project/amiyabot-player-rating-standalone/tsconfig.app.json" 的文件列表中。项目必须列出所有文件，或使用 "include" 模式。ts(6307) 
+
+
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["env.d.ts", "src/**/*","src/**/*.d.ts","src/**/*.ts", "src/**/*.vue"],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
+
+这个不对吗?
+
+
+调整了推荐算法，现在改为计算权重系数
+新的权重系数为 系数 = e^(0.01*(平均分数-干员满分))
+然后，推荐度算法改为 (平均分-你分数)*系数
+这个系数和计算分数时的线性加权不一样，目的是为了提高热门干员的占比。
+比如，热门干员玛恩纳的系数高达0.9，而冷门干员图耶的系数只有0.05
+那么，如果你玛恩纳是精2 1级，而图耶完全没练，系统仍然会推荐你先把玛恩纳升满。
+
+修改了计分规则，用于对热门干员和冷门干员进行额外的奖惩，防止出现两个冷门干员顶一个热门干员的情况。具体规则可以看页面下面的计分规则。
