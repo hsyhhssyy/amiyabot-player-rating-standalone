@@ -27,10 +27,11 @@
     </div>
 
     <div class="info-card">
-      下一步干员养成建议，仅列出当前练度低于平均水平的干员，仅供参考哦。<p/>
-      <span >（如果你觉得这里面的养成建议没啥用，那大概是你的练度已经很高了，或者该练的干员都已经练了。）</span>
-      <p/>
-      <li v-if="suggestions.length==0">给大佬跪了，大佬您想练什么就练什么吧。</li>
+      下一步干员养成建议，仅列出当前练度低于平均水平的干员，仅供参考哦。
+      <p />
+      <span>（如果你觉得这里面的养成建议没啥用，那大概是你的练度已经很高了，或者该练的干员都已经练了。）</span>
+      <p />
+      <li v-if="suggestions.length == 0">给大佬跪了，大佬您想练什么就练什么吧。</li>
       <ul>
         <li v-for="suggestion in suggestions">{{ suggestion }}</li>
       </ul>
@@ -51,31 +52,82 @@
         <table>
           <thead>
             <tr>
-              <th>干员名称</th>
-              <th>总分</th>
-              <th>补正后</th>
-              <th>等级分</th>
-              <th>补正后</th>
-              <th>专精分</th>
-              <th>补正后</th>
-              <th>模组分</th>
-              <th>补正后</th>
+              <th @click="sortTable('name')"
+                :class="{ 'sorted-asc': sortKey === 'name' && sortDirection === 'asc', 'sorted-desc': sortKey === 'name' && sortDirection === 'desc' }">
+                干员名称</th>
+              <th @click="sortTable('total')"
+                :class="{ 'sorted-asc': sortKey === 'total' && sortDirection === 'asc', 'sorted-desc': sortKey === 'total' && sortDirection === 'desc' }">
+                总分</th>
+              <th @click="sortTable('totalAveraged')"
+                :class="{ 'sorted-asc': sortKey === 'totalAveraged' && sortDirection === 'asc', 'sorted-desc': sortKey === 'totalAveraged' && sortDirection === 'desc' }">
+                补正后</th>
+              <th @click="sortTable('evolvePhaseText')"
+                :class="{ 'sorted-asc': sortKey === 'evolvePhaseText' && sortDirection === 'asc', 'sorted-desc': sortKey === 'evolvePhaseText' && sortDirection === 'desc' }">
+                精英化</th>
+              <th @click="sortTable('levelText')"
+                :class="{ 'sorted-asc': sortKey === 'levelText' && sortDirection === 'asc', 'sorted-desc': sortKey === 'levelText' && sortDirection === 'desc' }">
+                等级</th>
+              <th @click="sortTable('level')"
+                :class="{ 'sorted-asc': sortKey === 'level' && sortDirection === 'asc', 'sorted-desc': sortKey === 'level' && sortDirection === 'desc' }">
+                等级分</th>
+              <th @click="sortTable('levelAveraged')"
+                :class="{ 'sorted-asc': sortKey === 'levelAveraged' && sortDirection === 'asc', 'sorted-desc': sortKey === 'levelAveraged' && sortDirection === 'desc' }">
+                补正后</th>
+              <th @click="sortTable('skillLevel')"
+                :class="{ 'sorted-asc': sortKey === 'skillLevel' && sortDirection === 'asc', 'sorted-desc': sortKey === 'skillLevel' && sortDirection === 'desc' }">
+                技能等级</th>
+              <th @click="sortTable('specializeText1')"
+                :class="{ 'sorted-asc': sortKey === 'specializeText1' && sortDirection === 'asc', 'sorted-desc': sortKey === 'specializeText1' && sortDirection === 'desc' }">
+                1技能</th>
+              <th @click="sortTable('specializeText2')"
+                :class="{ 'sorted-asc': sortKey === 'specializeText2' && sortDirection === 'asc', 'sorted-desc': sortKey === 'specializeText2' && sortDirection === 'desc' }">
+                2技能</th>
+              <th @click="sortTable('specializeText3')"
+                :class="{ 'sorted-asc': sortKey === 'specializeText3' && sortDirection === 'asc', 'sorted-desc': sortKey === 'specializeText3' && sortDirection === 'desc' }">
+                3技能</th>
+              <th @click="sortTable('specialize')"
+                :class="{ 'sorted-asc': sortKey === 'specialize' && sortDirection === 'asc', 'sorted-desc': sortKey === 'specialize' && sortDirection === 'desc' }">
+                专精分</th>
+              <th @click="sortTable('specializeAveraged')"
+                :class="{ 'sorted-asc': sortKey === 'specializeAveraged' && sortDirection === 'asc', 'sorted-desc': sortKey === 'specializeAveraged' && sortDirection === 'desc' }">
+                补正后</th>
+              <th @click="sortTable('equipText1')"
+                :class="{ 'sorted-asc': sortKey === 'equipText1' && sortDirection === 'asc', 'sorted-desc': sortKey === 'equipText1' && sortDirection === 'desc' }">
+                1模组<span class="note">(注)</span></th>
+              <th @click="sortTable('equipText2')"
+                :class="{ 'sorted-asc': sortKey === 'equipText2' && sortDirection === 'asc', 'sorted-desc': sortKey === 'equipText2' && sortDirection === 'desc' }">
+                2模组<span class="note">(注)</span></th>
+              <th @click="sortTable('equip')"
+                :class="{ 'sorted-asc': sortKey === 'equip' && sortDirection === 'asc', 'sorted-desc': sortKey === 'equip' && sortDirection === 'desc' }">
+                模组分</th>
+              <th @click="sortTable('equipAveraged')"
+                :class="{ 'sorted-asc': sortKey === 'equipAveraged' && sortDirection === 'asc', 'sorted-desc': sortKey === 'equipAveraged' && sortDirection === 'desc' }">
+                补正后</th>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="detail in scoreDetails" :key="detail.name">
+            <tr v-for="detail in sortedItems" :key="detail.characterId">
               <td>{{ detail.name }}</td>
               <td>{{ Math.round(detail.total) }}</td>
               <td>{{ Math.round(detail.totalAveraged) }}</td>
+              <td>{{ detail.evolvePhaseText }}</td>
+              <td>{{ detail.levelText }}</td>
               <td>{{ Math.round(detail.level) }}</td>
               <td>{{ Math.round(detail.levelAveraged) }}</td>
+              <td>{{ Math.round(detail.skillLevel) }}</td>
+              <td>{{ detail.specializeText1 }}</td>
+              <td>{{ detail.specializeText2 }}</td>
+              <td>{{ detail.specializeText3 }}</td>
               <td>{{ Math.round(detail.specialize) }}</td>
               <td>{{ Math.round(detail.specializeAveraged) }}</td>
+              <td>{{ detail.equipText1 }}</td>
+              <td>{{ detail.equipText2 }}</td>
               <td>{{ Math.round(detail.equip) }}</td>
               <td>{{ Math.round(detail.equipAveraged) }}</td>
             </tr>
           </tbody>
         </table>
+        <p class="note">注：模组数据因森空岛API的BUG无法正确显示，表现为未开启模组和1级模组均显示为1级。</p>
       </div>
     </div>
 
@@ -91,48 +143,49 @@
       </div>
       <div v-if="ruleExpanded" class="details-table">
         <div class="scoring-rules">
-    <h2>计分规则</h2>
-    <p>打分规则如下：</p>
-    <p>首先计算玩家的各项分数</p>
-    <ol>
-      <li>干员等级分：每1级1分（将精英化也考虑进去，比如精二10级的玛恩纳，是50+80+10=140分）</li>
-      <li>干员专精分：每个专精等级30分</li>
-      <li>干员模组分：每个模组等级20分</li>
-    </ol>
-    <p>
-      然后，根据最新统计的玩家练度数据（首页有展示），计算每项分数的补正如下：
-    </p>
-    <ol>
-      <li>如果该项目的平均得分为X，而你的得分为Y，则补正为：X+(X-Y)/2</li>
-      <li>比如玛恩纳的平均等级分为220分（平均精二满级），而你的练度为190分（精二60级）</li>
-      <li>则你的分数为 190 + (190-220)/2 = 175</li>
-      <li>任何单项的分数不会低于0分</li>
-    </ol>
-    <p>
-      基础得分代表了养成投入的资源。
-    </p>
-    <p>
-      而补正得分则是对你的惩罚和奖励。
-    </p>
-    <p>
-      如果大家都练你不练，则你的分数会低于练度应得的基础分。反之如果大家都不练但是你练了，那么会加奖励分。
-    </p>
-    <h2>关于练度推荐</h2>    
-    <p>
-      计算得分时，还会同时计算提升潜力，然后按顺序展示提升潜力最大的前十位（注意，提升潜力和分数差距并不完全相关）。
-    </p>
-    <ol>
-      <li>如果你的某个干员的精英化等级落后于平均精英化等级，提升潜力=与平均等级分的差距*2 。这项的目的是首先推荐精英化等级落后的干员。</li>
-      <li>如果你的干员的精英化等级高于平均精英化等级，则提升潜力=与平均等级分的差距+技能专精分差距最大的那个技能的技能专精分+模组分差距最大的那个模组的模组分。</li>
-      <li>也就是说，如果你的某位干员的练度，高于大家的平均练度，那么这位干员就完全不会出现在列表里</li>
-    </ol>
-    <div class="github-link-container">
-      <a href="https://github.com/hsyhhssyy/amiyabot-player-rating-standalone" target="_blank" rel="noopener noreferrer">
-        <img src="@/assets/github-octocat.png" alt="查看GitHub项目" class="github-icon" />
-        <span>查看GitHub项目</span>
-      </a>
-    </div>
-  </div>
+          <h2>计分规则</h2>
+          <p>打分规则如下：</p>
+          <p>首先计算玩家的各项分数</p>
+          <ol>
+            <li>干员等级分：每1级1分（将精英化也考虑进去，比如精二10级的玛恩纳，是50+80+10=140分）</li>
+            <li>干员专精分：每个专精等级30分</li>
+            <li>干员模组分：每个模组等级20分</li>
+          </ol>
+          <p>
+            然后，根据最新统计的玩家练度数据（首页有展示），计算每项分数的补正如下：
+          </p>
+          <ol>
+            <li>如果该项目的平均得分为X，而你的得分为Y，则补正为：X+(X-Y)/2</li>
+            <li>比如玛恩纳的平均等级分为220分（平均精二满级），而你的练度为190分（精二60级）</li>
+            <li>则你的分数为 190 + (190-220)/2 = 175</li>
+            <li>任何单项的分数不会低于0分</li>
+          </ol>
+          <p>
+            基础得分代表了养成投入的资源。
+          </p>
+          <p>
+            而补正得分则是对你的惩罚和奖励。
+          </p>
+          <p>
+            如果大家都练你不练，则你的分数会低于练度应得的基础分。反之如果大家都不练但是你练了，那么会加奖励分。
+          </p>
+          <h2>关于练度推荐</h2>
+          <p>
+            计算得分时，还会同时计算提升潜力，然后按顺序展示提升潜力最大的前十位（注意，提升潜力和分数差距并不完全相关）。
+          </p>
+          <ol>
+            <li>如果你的某个干员的精英化等级落后于平均精英化等级，提升潜力=与平均等级分的差距*2 。这项的目的是首先推荐精英化等级落后的干员。</li>
+            <li>如果你的干员的精英化等级高于平均精英化等级，则提升潜力=与平均等级分的差距+技能专精分差距最大的那个技能的技能专精分+模组分差距最大的那个模组的模组分。</li>
+            <li>也就是说，如果你的某位干员的练度，高于大家的平均练度，那么这位干员就完全不会出现在列表里</li>
+          </ol>
+          <div class="github-link-container">
+            <a href="https://github.com/hsyhhssyy/amiyabot-player-rating-standalone" target="_blank"
+              rel="noopener noreferrer">
+              <img src="@/assets/github-octocat.png" alt="查看GitHub项目" class="github-icon" />
+              <span>查看GitHub项目</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -148,13 +201,24 @@ import axios from 'axios';
 import { HmacSHA1, enc } from 'crypto-js';
 
 interface ScoreDetail {
+  characterId: string;
   total: number;
   totalAveraged: number;
+  evolvePhaseText: string;
   level: number;
+  levelText: string;
   levelAveraged: number;
+  skillLevel: number;
   specialize: number;
+  specializeText: string;
+  specializeText1: string;
+  specializeText2: string;
+  specializeText3: string;
   specializeAveraged: number;
   equip: number;
+  equipText: string;
+  equipText1: string;
+  equipText2: string;
   equipAveraged: number;
   name: string;
   potential: number;
@@ -173,6 +237,35 @@ export default {
     const scoreDetails = ref<ScoreDetail[]>([]);
     const suggestions = ref<String[]>([]);
     const updateTime = ref(Date.now());
+
+    const sortKey = ref<string | null>(null);
+    const sortDirection = ref<'asc' | 'desc'>('asc');
+
+    const sortedItems = computed(() => {
+      if (!sortKey.value) {
+        return scoreDetails.value;
+      }
+      return [...scoreDetails.value].sort((a, b) => {
+        console.log(`${(a as any)[sortKey.value!]} vs ${(b as any)[sortKey.value!]}`)
+        if ((a as any)[sortKey.value!] < (b as any)[sortKey.value!]) {
+          return sortDirection.value === 'asc' ? -1 : 1;
+        }
+        if ((a as any)[sortKey.value!] > (b as any)[sortKey.value!]) {
+          return sortDirection.value === 'asc' ? 1 : -1;
+        }
+        return 0;
+      });
+    });
+
+    const sortTable = (key: string) => {
+      if (sortKey.value === key) {
+        sortDirection.value = sortDirection.value === 'asc' ? 'desc' : 'asc';
+      } else {
+        sortKey.value = key;
+        sortDirection.value = 'asc';
+      }
+    };
+
 
     const doctorScore = ref({
       name: "",
@@ -233,20 +326,31 @@ export default {
 
 
     const handleButtonClick = () => {
-              sessionStorage.removeItem('tokenValue')
-          router.push({ name: 'AquireToken' });
-        };
+      sessionStorage.removeItem('tokenValue')
+      router.push({ name: 'AquireToken' });
+    };
 
     const calcuate_single_char = (character: any, charMapData: any, averageData: any) => {
       let scoreDict = {
+        characterId: "",
         total: 0,
         totalAveraged: 0,
+        evolvePhaseText: "",
         level: 0,
         levelAveraged: 0,
+        levelText: "",
+        skillLevel: 0,
         specialize: 0,
         specializeAveraged: 0,
+        specializeText: "",
+        specializeText1: "",
+        specializeText2: "",
+        specializeText3: "",
         equip: 0,
         equipAveraged: 0,
+        equipText: "",
+        equipText1: "",
+        equipText2: "",
         potential: 0,
         potentialSuggestion: ""
       };
@@ -282,17 +386,38 @@ export default {
       const averageCalculatedLevel = averageData.averageCalculatedLevel;
       const levelScore = 2 * scoreDict.level - averageCalculatedLevel;
 
+      scoreDict.characterId = character.charId
+
       scoreDict.levelAveraged = levelScore;
+      scoreDict.evolvePhaseText = `${character.evolvePhase}`
+      scoreDict.levelText = `${character.level}`
+
+      scoreDict.skillLevel = character.mainSkillLvl
 
       // 计算提升潜力
       let maxSpecializeSkillIndex = 0;
       let maxSpecializeDifference = 0;
+      scoreDict.specializeText = ""
       character.skills.forEach((skill: any, index: number) => {
         const averageSpecializeLevel = averageData.averageSpecializeLevel[index];
         const specializeScore = (2 * skill.specializeLevel - averageSpecializeLevel) * 30;
 
         scoreDict.specialize += skill.specializeLevel * 30;
         scoreDict.specializeAveraged += specializeScore;
+
+        scoreDict.specializeText += `${index + 1}:${skill.specializeLevel} `
+
+        switch (index) {
+          case 0:
+            scoreDict.specializeText1 = `${skill.specializeLevel}`
+            break
+          case 1:
+            scoreDict.specializeText2 = `${skill.specializeLevel}`
+            break
+          case 2:
+            scoreDict.specializeText3 = `${skill.specializeLevel}`
+            break
+        }
 
         // 计算技能专精分差距最大值
         const specializeDifference = (averageSpecializeLevel - skill.specializeLevel) * 30;
@@ -312,6 +437,18 @@ export default {
         scoreDict.equip += equipment.level * 20;
         scoreDict.equipAveraged += equipScore;
 
+
+        scoreDict.equipText += `${index + 1}:${equipment.level} `
+
+        switch (index) {
+          case 1:
+            scoreDict.equipText1 = `${equipment.level}`
+            break
+          case 2:
+            scoreDict.equipText2 = `${equipment.level}`
+            break
+        }
+
         // 计算模组分差距最大值
         const equipDifference = (averageEquipLevel - equipment.level) * 20;
         if (equipDifference > maxEquipDifference) {
@@ -322,27 +459,27 @@ export default {
 
       scoreDict.total = scoreDict.level + scoreDict.specialize + scoreDict.equip;
 
-      if(scoreDict.specializeAveraged<0){
-        scoreDict.specializeAveraged=0;
+      if (scoreDict.specializeAveraged < 0) {
+        scoreDict.specializeAveraged = 0;
       }
 
-      if(scoreDict.equipAveraged<0){
-        scoreDict.equipAveraged=0;
+      if (scoreDict.equipAveraged < 0) {
+        scoreDict.equipAveraged = 0;
       }
-      
-      if(scoreDict.levelAveraged<0){
-        scoreDict.levelAveraged=0;
+
+      if (scoreDict.levelAveraged < 0) {
+        scoreDict.levelAveraged = 0;
       }
 
       scoreDict.totalAveraged = scoreDict.levelAveraged + scoreDict.specializeAveraged + scoreDict.equipAveraged;
 
       //let potentialSuggestion = `averageCalculatedLevel=${averageCalculatedLevel} averageData.averageEvolvePhase=${averageData.averageEvolvePhase} scoreDict.level=${scoreDict.level} character.level=${character.level} averageData.averageLevel=${averageData.averageLevel} minEquiptLevel=${minEquiptLevel}`
-      let potentialSuggestion =""
+      let potentialSuggestion = ""
 
       if (character.evolvePhase < averageData.averageEvolvePhase) {
-        if(averageData.averageEvolvePhase<2&&charMapData.rarity>2){
+        if (averageData.averageEvolvePhase < 2 && charMapData.rarity > 2) {
           scoreDict.potential = 0;
-        }else{
+        } else {
           scoreDict.potential = (averageCalculatedLevel - scoreDict.level) * 2;
         }
 
@@ -358,12 +495,12 @@ export default {
 
       let hasEquip = character.equip && character.equip.length > 1;
 
-      if (maxSpecializeSkillIndex > 0&& (averageData.averageEvolvePhase>=2||character.evolvePhase>=2)) {
-        potentialSuggestion += `，专精${maxSpecializeSkillIndex+1}技能至专${Math.ceil(averageData.averageSpecializeLevel[maxSpecializeSkillIndex])}`;
+      if (maxSpecializeSkillIndex > 0 && (averageData.averageEvolvePhase >= 2 || character.evolvePhase >= 2)) {
+        potentialSuggestion += `，专精${maxSpecializeSkillIndex + 1}技能至专${Math.ceil(averageData.averageSpecializeLevel[maxSpecializeSkillIndex])}`;
       }
 
-      if (hasEquip && maxEquipIndex > 0 && (averageData.averageEvolvePhase>=2||character.evolvePhase>=2)
-      && (character.level >= minEquiptLevel || averageData.averageLevel >=minEquiptLevel)) {
+      if (hasEquip && maxEquipIndex > 0 && (averageData.averageEvolvePhase >= 2 || character.evolvePhase >= 2)
+        && (character.level >= minEquiptLevel || averageData.averageLevel >= minEquiptLevel)) {
         potentialSuggestion += `，开启${maxEquipIndex}模组至${Math.ceil(averageData.averageEquipLevel[maxEquipIndex])}级`;
       }
 
@@ -428,9 +565,14 @@ export default {
           totalSpecializeScores += scoreDict.specializeAveraged;
           totalEquipScores += scoreDict.equipAveraged;
 
+          let charName = charMapData.name
+          if (scoreDict.characterId == "char_1001_amiya2") {
+            charName = "阿米娅-近卫"
+          }
+
           if (scoreDict.total !== 0) {
             scoreDetails.value.push({
-              name: charMapData.name,
+              name: charName,
               ...scoreDict
             });
           }
@@ -510,6 +652,10 @@ export default {
       toggleRule,
       handleButtonClick,
       updateTime,
+      sortedItems,
+      sortTable,
+      sortKey,
+      sortDirection,
       suggestions
     };
   }
@@ -595,7 +741,7 @@ export default {
   border-bottom: 1px solid #e0e0e0;
 }
 
-.info-card .note {
+.note {
   font-size: 12px;
   margin-top: 10px;
 }
@@ -623,7 +769,8 @@ h2 {
   font-size: 24px;
 }
 
-p, li {
+p,
+li {
   color: #555;
   font-size: 16px;
 }
@@ -648,5 +795,22 @@ button:hover {
   background-color: #2980b9;
 }
 
+.sorted-asc {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.sorted-desc {
+  background-color: #c0c0c0;
+  font-weight: bold;
+}
+
+.sorted-asc::after {
+  content: "↑";
+}
+
+.sorted-desc::after {
+  content: "↓";
+}
 </style>
   
