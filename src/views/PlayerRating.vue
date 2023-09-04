@@ -34,7 +34,7 @@
           <td><strong class="total-score">{{ Math.round(doctorScore.scoreFactorTotal) }}&nbsp;</strong></td>
         </tr>
       </table>
-      <p class="note">补正用平均练度数据更新于：{{ updateTime }} &nbsp;规则更新于：2023-09-04T14:30</p>
+      <p class="note">补正用平均练度数据更新于：{{ updateTime }} &nbsp;规则更新于：2023-09-04 14:30:00</p>
       <p class="warning">该分数仅供娱乐，请不要用这个分数来评判博士呦~~</p>
     </div>
 

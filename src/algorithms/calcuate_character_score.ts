@@ -2,6 +2,7 @@ import { type Ref } from 'vue';
 import axios from 'axios';
 import type { DoctorScore, ScoreDetail } from './interface';
 import { uploadData } from './oss_upload';
+import convertToDisplayFormat from './date_process';
 
 function calculateWeightFactor(avgLevel: number, X: number, k: number) {
   return Math.exp(k * (avgLevel - X));
@@ -254,7 +255,7 @@ export default async function calculate_score(token: string, doctorScore: Ref<Do
 
     response = await axios.get("/latest_character_statistic.json");
     const characterStatisticsData: any = response.data.data; // 根据你的数据结构进行调整
-    updateTime.value = response.data.versionEnd
+    updateTime.value = convertToDisplayFormat(response.data.versionEnd)
 
     infoData.chars.forEach((character: { charId: string | number; }) => {
       const charMapData = infoData.charInfoMap[character.charId];
