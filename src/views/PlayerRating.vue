@@ -11,7 +11,7 @@
         </tr> -->
         <tr>
           <td>干员总数</td>
-          <td class="char-total" colspan="2" >{{ doctorScore.charsTotal }}</td>
+          <td class="char-total" colspan="2">{{ doctorScore.charsTotal }}</td>
         </tr>
         <tr>
           <td>干员等级分</td>
@@ -29,7 +29,9 @@
           <td>{{ Math.round(doctorScore.scoreEquipFactorTotal) }}</td>
         </tr>
         <tr>
-          <td><p class="total-score">总分</p></td>
+          <td>
+            <p class="total-score">总分</p>
+          </td>
           <!-- <td><strong class="total-score">{{ Math.round(doctorScore.scoreTotal) }}&nbsp;</strong></td> -->
           <td><strong class="total-score">{{ Math.round(doctorScore.scoreFactorTotal) }}&nbsp;</strong></td>
         </tr>
@@ -118,6 +120,9 @@
               <th @click="sortTable('equipAveraged')"
                 :class="{ 'sorted-asc': sortKey === 'equipAveraged' && sortDirection === 'asc', 'sorted-desc': sortKey === 'equipAveraged' && sortDirection === 'desc' }">
                 补正后</th>
+              <th @click="sortTable('potentialRank')"
+                :class="{ 'sorted-asc': sortKey === 'potentialRank' && sortDirection === 'asc', 'sorted-desc': sortKey === 'potentialRank' && sortDirection === 'desc' }">
+                潜能</th>
             </tr>
           </thead>
           <tbody>
@@ -140,6 +145,7 @@
               <td>{{ detail.equipText2 }}</td>
               <td>{{ Math.round(detail.equip) }}</td>
               <td>{{ Math.round(detail.equipAveraged) }}</td>
+              <td>{{ Math.round(detail.potentialRank) }}</td>
             </tr>
           </tbody>
         </table>
@@ -160,9 +166,10 @@
       <div v-if="ruleExpanded" class="details-table">
         <div class="scoring-rules">
           <h2>加权因子</h2>
-          <p>首先，计算一个干员加权因子W，这个因子的计算公式如下：<p id="formula" v-html="html"></p>
-            </p>
-            <p>该系数用于指示干员的热度，越是平均接近满练，则越是代表大家喜欢去练这个干员。因此对这个干员的奖励和惩罚都会变大。</p>
+          <p>首先，计算一个干员加权因子W，这个因子的计算公式如下：
+          <p id="formula" v-html="html"></p>
+          </p>
+          <p>该系数用于指示干员的热度，越是平均接近满练，则越是代表大家喜欢去练这个干员。因此对这个干员的奖励和惩罚都会变大。</p>
           <h2>计分规则</h2>
           <p>打分规则如下：</p>
           <p>计算玩家的各项分数</p>
@@ -190,18 +197,22 @@
           <p>
             计算得分时，还会同时计算提升潜力，（注意，提升潜力和分数差距并不完全相关）。
           </p>
-          <ol>            
+          <ol>
             <li>干员的提升潜力 = W * (干员的平均分数 - 你的加权前分数)</li>
             <li>接下来会将所有你拥有的干员根据潜力值排序，并过滤掉潜力值低于50的干员（以及潜力值负数的干员）</li>
             <li>按顺序展示提升潜力最大的前十位并输出你和平均水平的差距，作为练度提升建议。</li>
             <li>不会展示推荐将四五六星的等级提升到精0或者精1的提示。</li>
             <li>括号后面标记的是该干员的提升潜力，并不是练完以后会加的分数，一般来说，练完以后会加的分数比潜力值要高。</li>
           </ol>
+          <h2>其他内容</h2>
+          <p>
+            虽然表格里有列出潜能，但是潜能不算分。
+          </p>
           <div class="github-link-container">
             <a href="https://github.com/hsyhhssyy/amiyabot-player-rating-standalone" target="_blank"
               rel="noopener noreferrer">
               <img src="@/assets/github-octocat.png" alt="查看GitHub项目" class="github-icon" />
-              <span>查看GitHub项目</span>
+              <span>在GitHub上查看本项目</span>
             </a>
           </div>
         </div>
@@ -246,7 +257,7 @@ export default {
       scoreSpecializeFactorTotal: 0,
       scoreLevelFactorTotal: 0,
       scoreFactorTotal: 0
-  })
+    })
 
     const html = computed(() => katex.renderToString('W = e^{0.01 \\times (\\text{样本平均分} - \\text{干员满分})}', { output: "mathml" }))
 
@@ -407,6 +418,7 @@ export default {
   text-align: left;
   border-bottom: 1px solid #e0e0e0;
 }
+
 .info-card td {
   padding: 5px 10px;
   border-bottom: 1px solid #e0e0e0;
@@ -482,6 +494,5 @@ button:hover {
 
 .sorted-desc::after {
   content: "↓";
-}
-</style>
+}</style>
   

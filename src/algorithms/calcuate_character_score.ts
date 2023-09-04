@@ -12,7 +12,7 @@ function calcuate_single_char(character: any, charMapData: any, averageData: any
   let scoreDict = {
     characterId: "",
     total: 0,
-    factor:0,
+    factor: 0,
     totalAveraged: 0,
     evolvePhaseText: "",
     level: 0,
@@ -31,7 +31,8 @@ function calcuate_single_char(character: any, charMapData: any, averageData: any
     equipText1: "",
     equipText2: "",
     potential: 0,
-    potentialSuggestion: ""
+    potentialSuggestion: "",
+    potentialRank:0
   };
 
   let equipFactor = 20;
@@ -92,6 +93,7 @@ function calcuate_single_char(character: any, charMapData: any, averageData: any
   scoreDict.levelText = `${character.level}`
 
   scoreDict.skillLevel = character.mainSkillLvl
+  scoreDict.potentialRank = character.potentialRank
 
   // 计算提升潜力
   let maxSpecializeSkillIndex = 0;
@@ -132,7 +134,7 @@ function calcuate_single_char(character: any, charMapData: any, averageData: any
     if (index === 0) return;
 
     const averageEquipLevel = averageData.averageEquipLevel[index.toString()] || 0;
-    const equipScore = (equipment.level + (equipment.level  - averageEquipLevel) *factor) * equipFactor;
+    const equipScore = (equipment.level + (equipment.level - averageEquipLevel) * factor) * equipFactor;
     scoreDict.equip += equipment.level * equipFactor;
     scoreDict.equipAveraged += equipScore;
 

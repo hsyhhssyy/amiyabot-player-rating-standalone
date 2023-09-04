@@ -38,4 +38,5 @@ export interface ScoreDetail {
     name: string;
     potential: number;
     potentialSuggestion: string;
+    potentialRank:number;
   }
