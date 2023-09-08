@@ -264,6 +264,10 @@ export default async function calculate_score(token: string, doctorScore: Ref<Do
 
       const averageData = characterStatisticsData.find((stat: { characterId: string }) => stat.characterId === character.charId);
 
+      if(averageData == undefined){
+        return
+      }
+
       const scoreDict = calcuate_single_char(character, charMapData, averageData);
 
       doctorScore.value.scoreTotal += scoreDict.total;
