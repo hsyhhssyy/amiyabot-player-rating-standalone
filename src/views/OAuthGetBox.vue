@@ -100,9 +100,9 @@ onMounted(async () => {
         if (playerBoxResponse.data["code"] == 0) {
             sessionStorage.removeItem('tokenValue');
             sessionStorage.setItem('jsonValue', JSON.stringify(playerBoxResponse.data.data));
-            router.push({ name: 'PlayerRating' });
+            router.replace({ name: 'PlayerRating' });
         } else {
-            router.push("/");
+            router.replace("/");
         }
     }
 });

@@ -345,6 +345,8 @@ async function calculate_score_with_Json(boxJson: string, doctorScore: Ref<Docto
     
     let infoData = JSON.parse(boxJson)
 
+    doctorScore.value.name = infoData.status.name
+
     var response = await axios.get("/latest_character_statistic.json");
     const characterStatisticsData: any = response.data.data; // 根据你的数据结构进行调整
     updateTime.value = convertToDisplayFormat(response.data.versionEnd)
