@@ -91,13 +91,17 @@ onMounted(async () => {
         const playerBoxResponse = await axios.post('https://amiya-bot-service.hsyhhssyy.net/api/SKLandBox/GetBox',
             {
                 'PartList': 'chars,charInfoMap,status'
-            });
+            }, {
+            headers: {
+                Authorization: `Bearer ${accessToken}`,
+            },
+        });
 
-        if(playerBoxResponse.data["code"]==0){
+        if (playerBoxResponse.data["code"] == 0) {
             sessionStorage.removeItem('tokenValue');
             sessionStorage.setItem('jsonValue', JSON.stringify(playerBoxResponse.data.data));
             router.push({ name: 'PlayerRating' });
-        }else{
+        } else {
             router.push("/");
         }
     }
