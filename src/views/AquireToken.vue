@@ -32,7 +32,7 @@
         <div>1. 打开<a @click="openLink('https://www.skland.com/')">森空岛网页版</a>并登录。</div>
         <div>2. 在浏览器地址栏中输入以下内容并回车：<br><span class="command">{{ command2 }}</span></div>
         <div>3. 浏览器弹出的对话框内的值就是您的凭据。</div>
-        <div>安卓手机切换为桌面模式后，可以使用本方法获取Cred。</div>
+        <div>安卓手机Chrome浏览器切换为桌面模式后，可以使用本方法获取Cred。</div>
       </div>
       <div class="warning"><span>请妥善保管您的凭据，切勿透露给他人！</span></div>
       <div class="warning">
@@ -44,9 +44,6 @@
         <input type="text" v-model="jsonInput" placeholder="粘贴复制到的凭据">
         <button @click="handleButtonClick">开始打分</button>
       </div>
-    </div>
-    <div class="character-static">
-      <CharacterStatic />
     </div>
   </div>
 </template>
@@ -151,10 +148,6 @@ export default {
   width: 500px;
   flex-direction: column;
   gap: 16px;
-}
-
-.character-static {
-  flex-grow: 1;
 }
 
 .title {

@@ -220,7 +220,14 @@ function calcuate_single_char(character: any, charMapData: any, averageData: any
   return scoreDict;
 }
 
-export default async function calculate_score(token: string, doctorScore: Ref<DoctorScore>,
+const calcuator = {
+  calculateScoreWithToken:calculate_score,
+  calculateScoreWithJson:calculate_score_with_Json
+}
+
+export default calcuator
+
+async function calculate_score(token: string, doctorScore: Ref<DoctorScore>,
   updateTime: Ref<String>, scoreDetails: Ref<ScoreDetail[]>, suggestions: Ref<String[]>, loading: Ref<boolean>) {
 
   try {
@@ -319,6 +326,81 @@ export default async function calculate_score(token: string, doctorScore: Ref<Do
       localStorage.setItem('lastUploadTime-' + meData.gameStatus.uid, currentTime.toString());
     }
 
+    return true
+  } catch (error) {
+    alert("凭据失效或错误，请重新输入凭据。")
+    console.error("Error getting code:", error);
+    return false
+  }
+
+
+
+  
+}
+
+async function calculate_score_with_Json(boxJson: string, doctorScore: Ref<DoctorScore>,
+  updateTime: Ref<String>, scoreDetails: Ref<ScoreDetail[]>, suggestions: Ref<String[]>, loading: Ref<boolean>) {
+
+  try {
+    
+    let infoData = JSON.parse(boxJson)
+
+    var response = await axios.get("/latest_character_statistic.json");
+    const characterStatisticsData: any = response.data.data; // 根据你的数据结构进行调整
+    updateTime.value = convertToDisplayFormat(response.data.versionEnd)
+
+    infoData.chars.forEach((character: { charId: string | number; }) => {
+      const charMapData = infoData.charInfoMap[character.charId];
+
+      const averageData = characterStatisticsData.find((stat: { characterId: string }) => stat.characterId === character.charId);
+
+      if(averageData == undefined){
+        return
+      }
+
+      const scoreDict = calcuate_single_char(character, charMapData, averageData);
+
+      doctorScore.value.scoreTotal += scoreDict.total;
+      doctorScore.value.scoreFactorTotal += scoreDict.totalAveraged;
+      doctorScore.value.scoreLevelTotal += scoreDict.level;
+      doctorScore.value.scoreLevelFactorTotal += scoreDict.levelAveraged;
+      doctorScore.value.scoreSpecializeTotal += scoreDict.specialize;
+      doctorScore.value.scoreSpecializeFactorTotal += scoreDict.specializeAveraged;
+      doctorScore.value.scoreEquipTotal += scoreDict.equip;
+      doctorScore.value.scoreEquipFactorTotal += scoreDict.equipAveraged;
+
+      let charName = charMapData.name
+      if (scoreDict.characterId == "char_1001_amiya2") {
+        charName = "阿米娅-近卫"
+      }
+
+      if (scoreDict.total !== 0) {
+        scoreDetails.value.push({
+          name: charName,
+          ...scoreDict
+        });
+      }
+    });
+
+    doctorScore.value.charsTotal = infoData.chars.length;
+
+    // 找出total比totalAveraged少的项目
+    const lowerTotalDetails = scoreDetails.value.filter(detail => detail.potential > 50);
+    //const lowerTotalDetails = scoreDetails.value
+
+    const sortedScoreDicts = lowerTotalDetails.sort((a, b) => b.potential - a.potential);
+
+    // 获取前五个潜力最高的
+    //const topFivePotentials = sortedScoreDicts;
+    const topFivePotentials = sortedScoreDicts.slice(0, 10);
+
+    // 输出建议
+    const topFiveSuggestions = topFivePotentials.map(dict => dict.potentialSuggestion);
+
+    suggestions.value = topFiveSuggestions;
+
+    loading.value = false
+    
     return true
   } catch (error) {
     alert("凭据失效或错误，请重新输入凭据。")

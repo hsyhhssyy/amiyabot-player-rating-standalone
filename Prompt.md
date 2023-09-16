@@ -119,3 +119,7 @@ body {
 
 
 这段css是否涉及浏览器深色模式?如果涉及,能否改成固定颜色不随着深色模式切换?
+
+
+
+http://localhost:5174/OAuth?client-id=3c7ba8ceefb140f0a14c9124ffa409b1&state=testState&redirectUri=https%3A%2F%2Famiya-bot-score.hsyhhssyy.net%2FOAuthGetBox

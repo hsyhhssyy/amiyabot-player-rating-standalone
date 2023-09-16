@@ -227,8 +227,7 @@
 <script lang="ts">
 import { ref, onMounted, computed } from 'vue';
 import { useRouter } from 'vue-router'; // 导入 vue-router 的 useRouter 钩子
-import axios from 'axios';
-import calculate_score from '../algorithms/calcuate_character_score';
+import calcuator from '../algorithms/calcuate_character_score';
 import type { DoctorScore, ScoreDetail } from '../algorithms/interface';
 import katex from 'katex'
 
@@ -240,7 +239,6 @@ export default {
     const expanded = ref(false);
     const ruleExpanded = ref(false);
     const loading = ref(true);
-    const tokenValue = ref("");
     const scoreDetails = ref<ScoreDetail[]>([]);
     const suggestions = ref<String[]>([]);
     const updateTime = ref<String>("");
@@ -291,21 +289,28 @@ export default {
 
     const handleButtonClick = () => {
       sessionStorage.removeItem('tokenValue')
-      router.push({ name: 'AquireToken' });
+      router.push({ path: '/' });
     };
 
     onMounted(async () => {
       const storedToken = sessionStorage.getItem('tokenValue');
+      const storedJson = sessionStorage.getItem('jsonValue');
       if (storedToken) {
-        tokenValue.value = storedToken;
-        let success = await calculate_score(storedToken, doctorScore, updateTime, scoreDetails, suggestions, loading)
+        let success = await calcuator.calculateScoreWithToken(storedToken, doctorScore, updateTime, scoreDetails, suggestions, loading)
         if (success == false) {
           sessionStorage.removeItem('tokenValue')
-          router.push({ name: 'AquireToken' });
+          router.push({ path: '/' });
         }
-      } else {
+      } else if (storedJson) {
+        let success = await calcuator.calculateScoreWithJson(storedJson, doctorScore, updateTime, scoreDetails, suggestions, loading)
+        if (success == false) {
+          sessionStorage.removeItem('jsonValue')
+          router.push({ path: '/' });
+        }
+      } 
+      else {
         sessionStorage.removeItem('tokenValue')
-        router.push({ name: 'AquireToken' });
+        router.push({ path: '/' });
       }
     });
 
@@ -319,7 +324,6 @@ export default {
 
     return {
       loading,
-      tokenValue,
       expanded,
       ruleExpanded,
       doctorScore,
